@@ -58,7 +58,7 @@ java -cp waas.jar com.orch.client.Main --addr 172.16.193.2 --port 9000 --eaddr 1
 
 # Example 
 
-An example of launching is presented for the (Grid5000)[https://www.grid5000.fr/w/Grid5000:Home] infrastructure in *G5K/deploy-clusters.py*. This example start 5 virtual cluster on the 2 cluster *econome* and *ecotype* located in Nantes. Two of them are running KVM workers.
+An example of launching is presented for the (Grid5000)[https://www.grid5000.fr/w/Grid5000:Home] infrastructure in *G5K/deploy-clusters.py*. This example start 5 virtual clusters on the 2 clusters *econome* and *ecotype* located in Nantes. Two of them are running KVM workers.
 
 The KVM workers needs an image of ubuntu to start correclty, but the vm image is not provided on this repository. The docker workers are fully configured by the script.
 
@@ -85,19 +85,18 @@ python times.py ecotype-1-2.report.yaml
 
 Example of report : 
 ```yaml
-daemons : ; list of workers
+daemons : # list of workers
 - ecotype-1.nantes.grid5000.fr
 - ecotype-2.nantes.grid5000.fr
-tasks : : ;list of executed tasks
+tasks : : # list of executed tasks
   1-master@172.16.193.1_5000/1:
-    duration: 0:00:23
 	duration: 0:00:23
     end: 05/27/2020 19:11:14
     name: mProject
     start: 05/27/2020 19:10:51
     workflow: 1-master@172.16.193.13_5000
   ...
-vms: ; list of provisionned virtuals resources (including container)
+vms: # list of provisionned virtuals resources (including container)
   '1': 
     boot: 0:00:01
     duration: 0:01:54
@@ -106,7 +105,7 @@ vms: ; list of provisionned virtuals resources (including container)
     ready: 05/27/2020 19:10:50
     start: 05/27/2020 19:10:49
   ...
-workflows: ; list of executed workflows
+workflows: # list of executed workflows
   1-master@172.16.193.13_5000:
     duration: 0:01:58
     end: 05/27/2020 19:12:42
