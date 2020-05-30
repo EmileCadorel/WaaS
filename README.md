@@ -90,7 +90,7 @@ daemons : # list of workers
 - ecotype-2.nantes.grid5000.fr
 tasks : : # list of executed tasks
   1-master@172.16.193.1_5000/1:
-	duration: 0:00:23
+    duration: 0:00:23
     end: 05/27/2020 19:11:14
     name: mProject
     start: 05/27/2020 19:10:51
