@@ -27,7 +27,7 @@ To start we need to launch a leader module, on a node.
 java -cp waas.jar com.orch.leader.Main --addr 172.16.193.1 --port 12000 --sched HEFT
 ```
 
-Then launch each master module, one of them must be on the same node as the leader module (limitation of this implementation). To each master module, specify the address and port of the leader (--eaddr, --eport).
+Then launch each master module, one of them must be on the same node as the leader module (limitation of this implementation, they must share the same database). To each master module, specify the address and port of the leader (--eaddr, --eport).
 
 ```
 java -cp waas.jar com.orch.master.Main --addr 172.16.193.1 --port 5000 --eaddr 172.16.193.1 --eport 12000
