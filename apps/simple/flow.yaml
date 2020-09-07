@@ -1,0 +1,31 @@
+files:
+- id: 1-out
+  name: out.txt
+  size: 10
+- id: 2-out
+  name: out.txt
+  size: 20
+  type: output
+tasks:
+- app: One
+  dev_len: 10
+  mean_len: 2200
+  output:
+  - 1-out
+  os: ubuntu
+  needs:
+    cpus: 1
+    memory: 512
+- app: Two
+  dev_len: 10
+  mean_len: 2200
+  input:
+  - 1-out
+  output:
+  - 2-out
+  os: ubuntu
+  needs:
+    cpus: 1
+    memory: 512
+  
+  

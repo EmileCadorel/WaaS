@@ -1,0 +1,7 @@
+images :
+  - name : ubuntu
+    os : ubuntu
+    script :
+    mean_len : 62000
+    dev_len : 20000
+    

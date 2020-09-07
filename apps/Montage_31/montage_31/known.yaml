@@ -1,0 +1,64 @@
+tasks : 
+  - name : mBgModel
+    mean_len : 3612
+    dev_len : 675
+    os : debian/jessie64
+    needs :
+      cpus: 1
+      memory : 512    
+  - name : mConcatFit
+    mean_len : 3033
+    dev_len : 525
+    os : debian/jessie64
+    needs :
+      cpus: 1
+      memory : 512
+
+  - name : mProject
+    mean_len : 46904
+    dev_len : 2079
+    os : debian/jessie64
+    needs :
+      cpus: 1
+      memory : 512
+
+  - name : mAdd
+    mean_len : 3581
+    dev_len : 1045
+    os : debian/jessie64
+    needs :
+      cpus: 1
+      memory : 512
+    
+  - name : mDiffFit
+    mean_len : 4001
+    dev_len : 473
+    os : debian/jessie64
+    needs :
+      cpus: 1
+      memory : 512
+
+  - name : mJPEG
+    mean_len : 3487
+    dev_len : 1091
+    os : debian/jessie64
+    needs :
+      cpus: 1
+      memory : 512
+
+  - name : mBackground
+    mean_len : 3436
+    dev_len : 754
+    os : debian/jessie64
+    needs :
+      cpus: 1
+      memory : 512
+
+  - name : mImgtbl
+    mean_len : 3262
+    dev_len : 851
+    os : debian/jessie64
+    needs :
+      cpus: 1
+      memory : 512
+

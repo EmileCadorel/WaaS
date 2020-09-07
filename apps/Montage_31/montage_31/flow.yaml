@@ -1,0 +1,637 @@
+files:
+- id: 2mas0
+  name: 2mass-atlas-980914s-j0820044.fits
+  size: 1500
+  type: input
+- id: regi1
+  name: region-oversized.hdr
+  size: 1500
+  type: input
+- id: p2ma2
+  name: p2mass-atlas-980914s-j0820044_area.fits
+  size: 1500
+- id: p2ma3
+  name: p2mass-atlas-980914s-j0820044.fits
+  size: 1500
+- id: 2mas4
+  name: 2mass-atlas-001021s-j0490233.fits
+  size: 1500
+  type: input
+- id: p2ma5
+  name: p2mass-atlas-001021s-j0490233_area.fits
+  size: 1500
+- id: p2ma6
+  name: p2mass-atlas-001021s-j0490233.fits
+  size: 1500
+- id: 1-fi7
+  name: 1-fit.000001.000002.txt
+  size: 10
+- id: 1-st8
+  name: 1-stat.tbl
+  size: 10
+  type: input
+- id: 1-fi9
+  name: 1-fits.tbl
+  size: 10
+- id: 1-im10
+  name: 1-images.tbl
+  size: 10
+  type: input
+- id: 1-co11
+  name: 1-corrections.tbl
+  size: 10
+- id: 1-pr12
+  name: 1-projected.tbl
+  size: 10
+  type: input
+- id: c2ma13
+  name: c2mass-atlas-980914s-j0820044.fits
+  size: 10
+- id: c2ma14
+  name: c2mass-atlas-980914s-j0820044_area.fits
+  size: 10
+- id: c2ma15
+  name: c2mass-atlas-001021s-j0490233_area.fits
+  size: 10
+- id: c2ma16
+  name: c2mass-atlas-001021s-j0490233.fits
+  size: 10
+- id: 1-co17
+  name: 1-corrected.tbl
+  size: 10
+  type: input
+- id: 1-up18
+  name: 1-updated-corrected.tbl
+  size: 10
+- id: regi19
+  name: region.hdr
+  size: 10
+  type: input
+- id: 1-mo20
+  name: 1-mosaic.fits
+  size: 10
+  type: output
+- id: 1-mo21
+  name: 1-mosaic_area.fits
+  size: 10
+  type: output
+- id: 1-mo22
+  name: 1-mosaic.jpg
+  size: 10
+  type: output
+- id: 2mas23
+  name: 2mass-atlas-980914s-h0820044.fits
+  size: 10
+  type: input
+- id: p2ma24
+  name: p2mass-atlas-980914s-h0820044_area.fits
+  size: 10
+- id: p2ma25
+  name: p2mass-atlas-980914s-h0820044.fits
+  size: 10
+- id: 2mas26
+  name: 2mass-atlas-001021s-h0490233.fits
+  size: 10
+  type: input
+- id: p2ma27
+  name: p2mass-atlas-001021s-h0490233.fits
+  size: 10
+- id: p2ma28
+  name: p2mass-atlas-001021s-h0490233_area.fits
+  size: 10
+- id: 2-fi29
+  name: 2-fit.000001.000002.txt
+  size: 10
+- id: 2-st30
+  name: 2-stat.tbl
+  size: 10
+  type: input
+- id: 2-fi31
+  name: 2-fits.tbl
+  size: 10
+- id: 2-im32
+  name: 2-images.tbl
+  size: 10
+  type: input
+- id: 2-co33
+  name: 2-corrections.tbl
+  size: 10
+- id: 2-pr34
+  name: 2-projected.tbl
+  size: 10
+  type: input
+- id: c2ma35
+  name: c2mass-atlas-980914s-h0820044_area.fits
+  size: 10
+- id: c2ma36
+  name: c2mass-atlas-980914s-h0820044.fits
+  size: 10
+- id: c2ma37
+  name: c2mass-atlas-001021s-h0490233_area.fits
+  size: 10
+- id: c2ma38
+  name: c2mass-atlas-001021s-h0490233.fits
+  size: 10
+- id: 2-co39
+  name: 2-corrected.tbl
+  size: 10
+  type: input
+- id: 2-up40
+  name: 2-updated-corrected.tbl
+  size: 10
+- id: 2-mo41
+  name: 2-mosaic.fits
+  size: 10
+  type: output
+- id: 2-mo42
+  name: 2-mosaic_area.fits
+  size: 10
+  type: output
+- id: 2-mo43
+  name: 2-mosaic.jpg
+  size: 10
+  type: output
+- id: 2mas44
+  name: 2mass-atlas-001021s-k0490233.fits
+  size: 10
+  type: input
+- id: p2ma45
+  name: p2mass-atlas-001021s-k0490233.fits
+  size: 10
+- id: p2ma46
+  name: p2mass-atlas-001021s-k0490233_area.fits
+  size: 10
+- id: 2mas47
+  name: 2mass-atlas-980914s-k0820044.fits
+  size: 10
+  type: input
+- id: p2ma48
+  name: p2mass-atlas-980914s-k0820044.fits
+  size: 10
+- id: p2ma49
+  name: p2mass-atlas-980914s-k0820044_area.fits
+  size: 10
+- id: 3-fi50
+  name: 3-fit.000001.000002.txt
+  size: 10
+- id: 3-st51
+  name: 3-stat.tbl
+  size: 10
+  type: input
+- id: 3-fi52
+  name: 3-fits.tbl
+  size: 10
+- id: 3-im53
+  name: 3-images.tbl
+  size: 10
+  type: input
+- id: 3-co54
+  name: 3-corrections.tbl
+  size: 10
+- id: 3-pr55
+  name: 3-projected.tbl
+  size: 10
+  type: input
+- id: c2ma56
+  name: c2mass-atlas-001021s-k0490233.fits
+  size: 10
+- id: c2ma57
+  name: c2mass-atlas-001021s-k0490233_area.fits
+  size: 10
+- id: c2ma58
+  name: c2mass-atlas-980914s-k0820044_area.fits
+  size: 10
+- id: c2ma59
+  name: c2mass-atlas-980914s-k0820044.fits
+  size: 10
+- id: 3-co60
+  name: 3-corrected.tbl
+  size: 10
+  type: input
+- id: 3-up61
+  name: 3-updated-corrected.tbl
+  size: 10
+- id: 3-mo62
+  name: 3-mosaic_area.fits
+  size: 10
+  type: output
+- id: 3-mo63
+  name: 3-mosaic.fits
+  size: 10
+  type: output
+- id: 3-mo64
+  name: 3-mosaic.jpg
+  size: 10
+  type: output
+- id: mosa65
+  name: mosaic-color.jpg
+  size: 10
+  type: output
+tasks:
+- app: mProject
+  dev_len: 2079
+  input:
+  - 2mas0
+  - regi1
+  mean_len: 46904
+  needs: &id001
+    cpus: 1
+    memory: 512
+  os: ubuntu
+  output:
+  - p2ma2
+  - p2ma3
+  params: -X  2mass-atlas-980914s-j0820044.fits   p2mass-atlas-980914s-j0820044.fits   region-oversized.hdr
+- app: mProject
+  dev_len: 2079
+  input:
+  - 2mas4
+  - regi1
+  mean_len: 46904
+  needs: *id001
+  os: ubuntu
+  output:
+  - p2ma5
+  - p2ma6
+  params: -X  2mass-atlas-001021s-j0490233.fits   p2mass-atlas-001021s-j0490233.fits   region-oversized.hdr
+- app: mDiffFit
+  dev_len: 473
+  input:
+  - p2ma5
+  - p2ma2
+  - p2ma3
+  - p2ma6
+  - regi1
+  mean_len: 4001
+  needs: &id003
+    cpus: 1
+    memory: 512
+  os: ubuntu
+  output:
+  - 1-fi7
+  params: -d -s  1-fit.000001.000002.txt   p2mass-atlas-980914s-j0820044.fits   p2mass-atlas-001021s-j0490233.fits   1-diff.000001.000002.fits   region-oversized.hdr
+- app: mConcatFit
+  dev_len: 525
+  input:
+  - 1-fi7
+  - 1-st8
+  mean_len: 3033
+  needs: &id004
+    cpus: 1
+    memory: 512
+  os: ubuntu
+  output:
+  - 1-fi9
+  params: ' 1-stat.tbl   1-fits.tbl  .'
+- app: mBgModel
+  dev_len: 675
+  input:
+  - 1-fi9
+  - 1-im10
+  mean_len: 3612
+  needs: &id005
+    cpus: 1
+    memory: 512
+  os: ubuntu
+  output:
+  - 1-co11
+  params: -i 100000  1-images.tbl   1-fits.tbl   1-corrections.tbl
+- app: mBackground
+  dev_len: 754
+  input:
+  - 1-pr12
+  - p2ma2
+  - p2ma3
+  - 1-co11
+  mean_len: 3436
+  needs: &id002
+    cpus: 1
+    memory: 512
+  os: ubuntu
+  output:
+  - c2ma13
+  - c2ma14
+  params: -t  p2mass-atlas-980914s-j0820044.fits   c2mass-atlas-980914s-j0820044.fits   1-projected.tbl   1-corrections.tbl
+- app: mBackground
+  dev_len: 754
+  input:
+  - 1-pr12
+  - p2ma5
+  - p2ma6
+  - 1-co11
+  mean_len: 3436
+  needs: *id002
+  os: ubuntu
+  output:
+  - c2ma15
+  - c2ma16
+  params: -t  p2mass-atlas-001021s-j0490233.fits   c2mass-atlas-001021s-j0490233.fits   1-projected.tbl   1-corrections.tbl
+- app: mImgtbl
+  dev_len: 851
+  input:
+  - c2ma16
+  - c2ma13
+  - 1-co17
+  mean_len: 3262
+  needs: &id006
+    cpus: 1
+    memory: 512
+  os: ubuntu
+  output:
+  - 1-up18
+  params: . -t  1-corrected.tbl   1-updated-corrected.tbl
+- app: mAdd
+  dev_len: 1045
+  input:
+  - regi19
+  - c2ma13
+  - c2ma15
+  - c2ma16
+  - c2ma14
+  - 1-up18
+  mean_len: 3581
+  needs: &id007
+    cpus: 1
+    memory: 512
+  os: ubuntu
+  output:
+  - 1-mo20
+  - 1-mo21
+  params: -e  1-updated-corrected.tbl   region.hdr   1-mosaic.fits
+- app: mJPEG
+  dev_len: 1091
+  input:
+  - 1-mo20
+  mean_len: 3487
+  needs: &id008
+    cpus: 1
+    memory: 512
+  os: ubuntu
+  output:
+  - 1-mo22
+  params: -ct 0 -gray  1-mosaic.fits  0s 99.999% gaussian -out  1-mosaic.jpg
+- app: mProject
+  dev_len: 2079
+  input:
+  - 2mas23
+  - regi1
+  mean_len: 46904
+  needs: *id001
+  os: ubuntu
+  output:
+  - p2ma24
+  - p2ma25
+  params: -X  2mass-atlas-980914s-h0820044.fits   p2mass-atlas-980914s-h0820044.fits   region-oversized.hdr
+- app: mProject
+  dev_len: 2079
+  input:
+  - 2mas26
+  - regi1
+  mean_len: 46904
+  needs: *id001
+  os: ubuntu
+  output:
+  - p2ma27
+  - p2ma28
+  params: -X  2mass-atlas-001021s-h0490233.fits   p2mass-atlas-001021s-h0490233.fits   region-oversized.hdr
+- app: mDiffFit
+  dev_len: 473
+  input:
+  - p2ma25
+  - p2ma28
+  - p2ma27
+  - p2ma24
+  - regi1
+  mean_len: 4001
+  needs: *id003
+  os: ubuntu
+  output:
+  - 2-fi29
+  params: -d -s  2-fit.000001.000002.txt   p2mass-atlas-980914s-h0820044.fits   p2mass-atlas-001021s-h0490233.fits   2-diff.000001.000002.fits   region-oversized.hdr
+- app: mConcatFit
+  dev_len: 525
+  input:
+  - 2-st30
+  - 2-fi29
+  mean_len: 3033
+  needs: *id004
+  os: ubuntu
+  output:
+  - 2-fi31
+  params: ' 2-stat.tbl   2-fits.tbl  .'
+- app: mBgModel
+  dev_len: 675
+  input:
+  - 2-im32
+  - 2-fi31
+  mean_len: 3612
+  needs: *id005
+  os: ubuntu
+  output:
+  - 2-co33
+  params: -i 100000  2-images.tbl   2-fits.tbl   2-corrections.tbl
+- app: mBackground
+  dev_len: 754
+  input:
+  - 2-pr34
+  - 2-co33
+  - p2ma25
+  - p2ma24
+  mean_len: 3436
+  needs: *id002
+  os: ubuntu
+  output:
+  - c2ma35
+  - c2ma36
+  params: -t  p2mass-atlas-980914s-h0820044.fits   c2mass-atlas-980914s-h0820044.fits   2-projected.tbl   2-corrections.tbl
+- app: mBackground
+  dev_len: 754
+  input:
+  - 2-pr34
+  - 2-co33
+  - p2ma28
+  - p2ma27
+  mean_len: 3436
+  needs: *id002
+  os: ubuntu
+  output:
+  - c2ma37
+  - c2ma38
+  params: -t  p2mass-atlas-001021s-h0490233.fits   c2mass-atlas-001021s-h0490233.fits   2-projected.tbl   2-corrections.tbl
+- app: mImgtbl
+  dev_len: 851
+  input:
+  - 2-co39
+  - c2ma36
+  - c2ma38
+  mean_len: 3262
+  needs: *id006
+  os: ubuntu
+  output:
+  - 2-up40
+  params: . -t  2-corrected.tbl   2-updated-corrected.tbl
+- app: mAdd
+  dev_len: 1045
+  input:
+  - regi19
+  - c2ma38
+  - 2-up40
+  - c2ma35
+  - c2ma36
+  - c2ma37
+  mean_len: 3581
+  needs: *id007
+  os: ubuntu
+  output:
+  - 2-mo41
+  - 2-mo42
+  params: -e  2-updated-corrected.tbl   region.hdr   2-mosaic.fits
+- app: mJPEG
+  dev_len: 1091
+  input:
+  - 2-mo41
+  mean_len: 3487
+  needs: *id008
+  os: ubuntu
+  output:
+  - 2-mo43
+  params: -ct 0 -gray  2-mosaic.fits  0s 99.999% gaussian -out  2-mosaic.jpg
+- app: mProject
+  dev_len: 2079
+  input:
+  - 2mas44
+  - regi1
+  mean_len: 46904
+  needs: *id001
+  os: ubuntu
+  output:
+  - p2ma45
+  - p2ma46
+  params: -X  2mass-atlas-001021s-k0490233.fits   p2mass-atlas-001021s-k0490233.fits   region-oversized.hdr
+- app: mProject
+  dev_len: 2079
+  input:
+  - 2mas47
+  - regi1
+  mean_len: 46904
+  needs: *id001
+  os: ubuntu
+  output:
+  - p2ma48
+  - p2ma49
+  params: -X  2mass-atlas-980914s-k0820044.fits   p2mass-atlas-980914s-k0820044.fits   region-oversized.hdr
+- app: mDiffFit
+  dev_len: 473
+  input:
+  - p2ma49
+  - p2ma46
+  - p2ma45
+  - p2ma48
+  - regi1
+  mean_len: 4001
+  needs: *id003
+  os: ubuntu
+  output:
+  - 3-fi50
+  params: -d -s  3-fit.000001.000002.txt   p2mass-atlas-001021s-k0490233.fits   p2mass-atlas-980914s-k0820044.fits   3-diff.000001.000002.fits   region-oversized.hdr
+- app: mConcatFit
+  dev_len: 525
+  input:
+  - 3-fi50
+  - 3-st51
+  mean_len: 3033
+  needs: *id004
+  os: ubuntu
+  output:
+  - 3-fi52
+  params: ' 3-stat.tbl   3-fits.tbl  .'
+- app: mBgModel
+  dev_len: 675
+  input:
+  - 3-im53
+  - 3-fi52
+  mean_len: 3612
+  needs: *id005
+  os: ubuntu
+  output:
+  - 3-co54
+  params: -i 100000  3-images.tbl   3-fits.tbl   3-corrections.tbl
+- app: mBackground
+  dev_len: 754
+  input:
+  - 3-pr55
+  - p2ma46
+  - p2ma45
+  - 3-co54
+  mean_len: 3436
+  needs: *id002
+  os: ubuntu
+  output:
+  - c2ma56
+  - c2ma57
+  params: -t  p2mass-atlas-001021s-k0490233.fits   c2mass-atlas-001021s-k0490233.fits   3-projected.tbl   3-corrections.tbl
+- app: mBackground
+  dev_len: 754
+  input:
+  - 3-pr55
+  - p2ma49
+  - 3-co54
+  - p2ma48
+  mean_len: 3436
+  needs: *id002
+  os: ubuntu
+  output:
+  - c2ma58
+  - c2ma59
+  params: -t  p2mass-atlas-980914s-k0820044.fits   c2mass-atlas-980914s-k0820044.fits   3-projected.tbl   3-corrections.tbl
+- app: mImgtbl
+  dev_len: 851
+  input:
+  - c2ma59
+  - 3-co60
+  - c2ma56
+  mean_len: 3262
+  needs: *id006
+  os: ubuntu
+  output:
+  - 3-up61
+  params: . -t  3-corrected.tbl   3-updated-corrected.tbl
+- app: mAdd
+  dev_len: 1045
+  input:
+  - regi19
+  - c2ma58
+  - c2ma59
+  - c2ma57
+  - 3-up61
+  - c2ma56
+  mean_len: 3581
+  needs: *id007
+  os: ubuntu
+  output:
+  - 3-mo62
+  - 3-mo63
+  params: -e  3-updated-corrected.tbl   region.hdr   3-mosaic.fits
+- app: mJPEG
+  dev_len: 1091
+  input:
+  - 3-mo63
+  mean_len: 3487
+  needs: *id008
+  os: ubuntu
+  output:
+  - 3-mo64
+  params: -ct 0 -gray  3-mosaic.fits  0s 99.999% gaussian -out  3-mosaic.jpg
+- app: mJPEG
+  dev_len: 1091
+  input:
+  - 3-mo63
+  - 2-mo41
+  - 1-mo20
+  mean_len: 3487
+  needs: *id008
+  os: ubuntu
+  output:
+  - mosa65
+  params: -red  1-mosaic.fits  -1s 99.999% gaussian-log -green  2-mosaic.fits  -1s
+    99.999% gaussian-log -blue  3-mosaic.fits  -1s 99.999% gaussian-log -out  mosaic-color.jpg
