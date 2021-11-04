@@ -1,0 +1,11 @@
+- name: Copy join command to local file.
+  become: yes
+  shell: |
+    echo "{{ hostvars['master']['kubernetes_join_command'].stdout_lines[0] }}" > /tmp/kubernetes_join_command
+    sudo chmod 0777 /tmp/kubernetes_join_command
+
+- name: Join the Worker nodes to the cluster.
+  become: yes
+  shell: |
+    sh /tmp/kubernetes_join_command
+  register: joined_or_not

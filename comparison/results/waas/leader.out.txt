@@ -1,0 +1,19 @@
+[INFO] [11/03/2021 11:35:57.087] [main] [akka.remote.Remoting] Starting remoting
+[INFO] [11/03/2021 11:35:57.262] [main] [akka.remote.Remoting] Remoting started; listening on addresses :[akka.tcp://RemoteSystem@172.16.192.14:12000]
+[INFO] [11/03/2021 11:35:57.338] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.14:12000/user/leader] ICI?
+[INFO] [11/03/2021 11:35:58.575] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.14:12000/user/leader] Leader welcoming new master ...
+[INFO] [11/03/2021 11:35:58.586] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.14:12000/user/leader] Add new econome-16.nantes.grid5000.fr node in scheduler ...
+[INFO] [11/03/2021 11:35:58.588] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.14:12000/user/leader] Add new econome-14.nantes.grid5000.fr node in scheduler ...
+[INFO] [11/03/2021 11:35:58.608] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.14:12000/user/leader] Information about bandwidth between master@172.16.192.14_5000 and master@172.16.192.14_5000 is 10000000 KBytes/sec ...
+[INFO] [11/03/2021 11:37:45.689] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.14:12000/user/leader] Start download of flow : 1-master@172.16.192.14_5000
+[INFO] [11/03/2021 11:37:45.809] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.14:12000/user/leader] Workflow 1-master@172.16.192.14_5000 has been successfully downloaded to /tmp/master@172.16.192.14_5000/
+[WARN] [11/03/2021 11:37:46.162] [RemoteSystem-akka.remote.default-remote-dispatcher-14] [akka.tcp://RemoteSystem@172.16.192.14:12000/system/endpointManager/reliableEndpointWriter-akka.tcp%3A%2F%2FRemoteSystem%40172.16.192.16%3A9000-1] Association with remote system [akka.tcp://RemoteSystem@172.16.192.16:9000] has failed, address is now gated for [5000] ms. Reason: [Disassociated] 
+(0,,)
+[INFO] [11/03/2021 11:37:46.501] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.14:12000/user/leader] Workflow successfully loaded by the leader 1-master@172.16.192.14_5000
+NB nodes : 2
+econome-16.nantes.grid5000.fr VM : 1 @test:ubuntu {Map(cpus -> 6, memory -> 3072)} [112; 141[ => (31)
+
+econome-14.nantes.grid5000.fr 
+master@172.16.192.14_5000
+[INFO] [11/03/2021 11:37:46.557] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.14:12000/user/leader] Sending configuration to cluster : master@172.16.192.14_5000
+[INFO] [11/03/2021 11:38:22.941] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.14:12000/user/leader] Workflow 1-master@172.16.192.14_5000 is finished

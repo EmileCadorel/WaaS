@@ -1,0 +1,5 @@
+- name: run kubeadm reste
+  become: yes
+  shell: |
+    kubeadm reset -f
+    

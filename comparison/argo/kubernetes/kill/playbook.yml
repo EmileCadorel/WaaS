@@ -1,0 +1,6 @@
+- name: kill kube
+  hosts: "workers, masters"
+  become: yes
+  tasks:
+    - include: kill-k8s.yml
+        

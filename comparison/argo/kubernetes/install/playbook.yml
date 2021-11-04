@@ -1,0 +1,30 @@
+- name: install user
+  hosts: 'workers, masters'
+  become: yes
+  tasks: 
+    - include: users.yml
+
+- name: install-k8s scripts
+  hosts: "masters, workers"
+  remote_user: ubuntu
+  become: yes
+  become_method: sudo
+  become_user: root
+  gather_facts: yes
+  connection: ssh
+  tasks: 
+    - include: install-k8s.yml
+
+- name: configure master
+  hosts: masters
+  become: yes
+  tasks: 
+    - include: master.yml
+
+- name: join workers
+  hosts: workers
+  become: yes
+  gather_facts: yes
+  tasks: 
+    - include: join-worker.yml
+  

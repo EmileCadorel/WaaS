@@ -118,7 +118,7 @@ def parseLogFile (log_file) :
         line = fp.readline()
         cnt = 1
         while line:
-            interpretLine (line.strip (), dico)
+            interpretLine (str (line.strip ()), dico)
             line = fp.readline()
             cnt += 1
     return dico

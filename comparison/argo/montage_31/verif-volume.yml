@@ -1,0 +1,26 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: volumes-pvc-
+spec:
+  entrypoint: volumes-pvc-example
+  volumes:
+  - name: workdir
+    persistentVolumeClaim:
+      claimName: default/task-pv-claim
+      
+  templates:
+  - name: volumes-pvc-example
+    steps:
+    - - name: print
+        template: ls-dir
+
+  - name: ls-dir
+    container:
+      image: alpine:latest
+      command: [sh, -c]
+      args: ["echo getting message from volume; find /mnt/vol"]
+      # Mount workdir volume at /mnt/vol before invoking docker/whalesay      
+      volumeMounts:                     # same syntax as k8s Pod spec
+      - name: workdir
+        mountPath: /mnt/vol

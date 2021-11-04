@@ -1,0 +1,751 @@
+[INFO] [11/03/2021 11:35:58.072] [main] [akka.remote.Remoting] Starting remoting
+[INFO] [11/03/2021 11:35:58.234] [main] [akka.remote.Remoting] Remoting started; listening on addresses :[akka.tcp://RemoteSystem@172.16.192.16:4000]
+[INFO] [11/03/2021 11:35:58.290] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Connecting to Master Module ... 
+[INFO] [11/03/2021 11:35:58.292] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Load configuration ... 
+[INFO] [11/03/2021 11:35:58.334] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Inform master ...
+[INFO] [11/03/2021 11:35:58.336] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Start http file server ... 
+[INFO] [11/03/2021 11:35:59.343] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Daemon started and ready to recv message !
+[INFO] [11/03/2021 11:37:46.627] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/2mass-atlas-001021s-j0490233.fits for tasks : [2]
+[INFO] [11/03/2021 11:37:46.629] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/2mass-atlas-001021s-h0490233.fits for tasks : [12]
+[INFO] [11/03/2021 11:37:46.630] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/2mass-atlas-980914s-k0820044.fits for tasks : [22]
+[INFO] [11/03/2021 11:37:46.630] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/region-oversized.hdr for tasks : [1, 21, 13, 2, 22, 12, 3, 11, 23]
+[INFO] [11/03/2021 11:37:46.630] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/2-images.tbl for tasks : [15]
+[INFO] [11/03/2021 11:37:46.634] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/1-images.tbl for tasks : [5]
+[INFO] [11/03/2021 11:37:46.634] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/2-stat.tbl for tasks : [14]
+[INFO] [11/03/2021 11:37:46.636] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/2mass-atlas-980914s-h0820044.fits for tasks : [11]
+[INFO] [11/03/2021 11:37:46.638] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/1-stat.tbl for tasks : [4]
+[INFO] [11/03/2021 11:37:46.639] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/3-projected.tbl for tasks : [27, 26]
+[INFO] [11/03/2021 11:37:46.640] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/2mass-atlas-001021s-k0490233.fits for tasks : [21]
+[INFO] [11/03/2021 11:37:46.641] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/1-corrected.tbl for tasks : [8]
+[INFO] [11/03/2021 11:37:46.642] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/3-corrected.tbl for tasks : [28]
+[INFO] [11/03/2021 11:37:46.642] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/3-stat.tbl for tasks : [24]
+[INFO] [11/03/2021 11:37:46.643] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/3-images.tbl for tasks : [25]
+[INFO] [11/03/2021 11:37:46.643] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/1-projected.tbl for tasks : [6, 7]
+[INFO] [11/03/2021 11:37:46.644] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/2-corrected.tbl for tasks : [18]
+[INFO] [11/03/2021 11:37:46.645] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/2mass-atlas-980914s-j0820044.fits for tasks : [1]
+[INFO] [11/03/2021 11:37:46.645] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/2-projected.tbl for tasks : [17, 16]
+[INFO] [11/03/2021 11:37:46.646] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.14:5200:/1-master@172.16.192.14_5000/input/region.hdr for tasks : [29, 9, 19]
+INPUT : /1-master@172.16.192.14_5000/input/1-images.tbl
+INPUT : /1-master@172.16.192.14_5000/input/region-oversized.hdr
+INPUT : /1-master@172.16.192.14_5000/input/2-stat.tbl
+INPUT : /1-master@172.16.192.14_5000/input/2mass-atlas-980914s-h0820044.fits
+INPUT : /1-master@172.16.192.14_5000/input/2mass-atlas-980914s-k0820044.fits
+INPUT : /1-master@172.16.192.14_5000/input/2-images.tbl
+INPUT : /1-master@172.16.192.14_5000/input/2mass-atlas-001021s-h0490233.fits
+INPUT : /1-master@172.16.192.14_5000/input/2mass-atlas-001021s-j0490233.fits
+INPUT : /1-master@172.16.192.14_5000/input/3-projected.tbl
+INPUT : /1-master@172.16.192.14_5000/input/1-stat.tbl
+INPUT : /1-master@172.16.192.14_5000/input/3-corrected.tbl
+INPUT : /1-master@172.16.192.14_5000/input/2mass-atlas-001021s-k0490233.fits
+INPUT : /1-master@172.16.192.14_5000/input/3-stat.tbl
+INPUT : /1-master@172.16.192.14_5000/input/1-corrected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2mass-atlas-980914s-h0820044.fits /tmp/test/1-master@172.16.192.14_5000/11/2mass-atlas-980914s-h0820044.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/region-oversized.hdr /tmp/test/1-master@172.16.192.14_5000/1/region-oversized.hdr
+INPUT : /1-master@172.16.192.14_5000/input/region.hdr
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2mass-atlas-001021s-h0490233.fits /tmp/test/1-master@172.16.192.14_5000/12/2mass-atlas-001021s-h0490233.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/1-images.tbl /tmp/test/1-master@172.16.192.14_5000/5/1-images.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/1-stat.tbl /tmp/test/1-master@172.16.192.14_5000/4/1-stat.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/3-projected.tbl /tmp/test/1-master@172.16.192.14_5000/27/3-projected.tbl
+INPUT : /1-master@172.16.192.14_5000/input/2mass-atlas-980914s-j0820044.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2mass-atlas-980914s-k0820044.fits /tmp/test/1-master@172.16.192.14_5000/22/2mass-atlas-980914s-k0820044.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2mass-atlas-001021s-j0490233.fits /tmp/test/1-master@172.16.192.14_5000/2/2mass-atlas-001021s-j0490233.fits
+INPUT : /1-master@172.16.192.14_5000/input/2-corrected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2-stat.tbl /tmp/test/1-master@172.16.192.14_5000/14/2-stat.tbl
+INPUT : /1-master@172.16.192.14_5000/input/3-images.tbl
+INPUT : /1-master@172.16.192.14_5000/input/1-projected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/region-oversized.hdr /tmp/test/1-master@172.16.192.14_5000/21/region-oversized.hdr
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/3-projected.tbl /tmp/test/1-master@172.16.192.14_5000/26/3-projected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/region-oversized.hdr /tmp/test/1-master@172.16.192.14_5000/13/region-oversized.hdr
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/region-oversized.hdr /tmp/test/1-master@172.16.192.14_5000/2/region-oversized.hdr
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/3-stat.tbl /tmp/test/1-master@172.16.192.14_5000/24/3-stat.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/region.hdr /tmp/test/1-master@172.16.192.14_5000/29/region.hdr
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/region-oversized.hdr /tmp/test/1-master@172.16.192.14_5000/22/region-oversized.hdr
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/1-corrected.tbl /tmp/test/1-master@172.16.192.14_5000/8/1-corrected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2mass-atlas-001021s-k0490233.fits /tmp/test/1-master@172.16.192.14_5000/21/2mass-atlas-001021s-k0490233.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/region-oversized.hdr /tmp/test/1-master@172.16.192.14_5000/12/region-oversized.hdr
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/region.hdr /tmp/test/1-master@172.16.192.14_5000/9/region.hdr
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2-corrected.tbl /tmp/test/1-master@172.16.192.14_5000/18/2-corrected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2mass-atlas-980914s-j0820044.fits /tmp/test/1-master@172.16.192.14_5000/1/2mass-atlas-980914s-j0820044.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/region-oversized.hdr /tmp/test/1-master@172.16.192.14_5000/3/region-oversized.hdr
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/region.hdr /tmp/test/1-master@172.16.192.14_5000/19/region.hdr
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/1-projected.tbl /tmp/test/1-master@172.16.192.14_5000/6/1-projected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/3-images.tbl /tmp/test/1-master@172.16.192.14_5000/25/3-images.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/region-oversized.hdr /tmp/test/1-master@172.16.192.14_5000/11/region-oversized.hdr
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/1-projected.tbl /tmp/test/1-master@172.16.192.14_5000/7/1-projected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/region-oversized.hdr /tmp/test/1-master@172.16.192.14_5000/23/region-oversized.hdr
+INPUT : /1-master@172.16.192.14_5000/input/2-projected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2-images.tbl /tmp/test/1-master@172.16.192.14_5000/15/2-images.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/3-corrected.tbl /tmp/test/1-master@172.16.192.14_5000/28/3-corrected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2-projected.tbl /tmp/test/1-master@172.16.192.14_5000/17/2-projected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2-projected.tbl /tmp/test/1-master@172.16.192.14_5000/16/2-projected.tbl
+[INFO] [11/03/2021 11:37:49.638] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Launch vm : 1, with ubuntu of Map(cpus -> 6, memory -> 3072) for user test with 
+0 1a098836a6ed1cc90ce764149245c9e6794b744567a1f795409541025a896bd5
+ WARNING: Your kernel does not support swap limit capabilities or the cgroup is not mounted. Memory limited without swap.
+
+0 d_1
+ 
+[INFO] [11/03/2021 11:37:51.634] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 1 task /1-master@172.16.192.14_5000/mProject
+[INFO] [11/03/2021 11:37:51.635] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 12 task /1-master@172.16.192.14_5000/mProject
+[INFO] [11/03/2021 11:37:51.636] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 11 task /1-master@172.16.192.14_5000/mProject
+[INFO] [11/03/2021 11:37:51.636] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 21 task /1-master@172.16.192.14_5000/mProject
+[INFO] [11/03/2021 11:37:51.636] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 22 task /1-master@172.16.192.14_5000/mProject
+[INFO] [11/03/2021 11:37:51.637] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 2 task /1-master@172.16.192.14_5000/mProject
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mProject -o /tmp/test/1-master@172.16.192.14_5000/12/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mProject -o /tmp/test/1-master@172.16.192.14_5000/22/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mProject -o /tmp/test/1-master@172.16.192.14_5000/2/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mProject -o /tmp/test/1-master@172.16.192.14_5000/11/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mProject -o /tmp/test/1-master@172.16.192.14_5000/21/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mProject -o /tmp/test/1-master@172.16.192.14_5000/1/exec.tar)
+CURL : 
+[INFO] [11/03/2021 11:37:51.677] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/2
+CURL : 
+[INFO] [11/03/2021 11:37:51.679] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/1
+CURL : 
+[INFO] [11/03/2021 11:37:51.683] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/22
+CURL : 
+CURL : 
+[INFO] [11/03/2021 11:37:51.684] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/21
+[INFO] [11/03/2021 11:37:51.685] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/12
+CURL : 
+[INFO] [11/03/2021 11:37:51.688] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/11
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/2 ; echo $(pwd) ; ./launch.sh -X  2mass-atlas-001021s-j0490233.fits   p2mass-atlas-001021s-j0490233.fits   region-oversized.hdr
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/1 ; echo $(pwd) ; ./launch.sh -X  2mass-atlas-980914s-j0820044.fits   p2mass-atlas-980914s-j0820044.fits   region-oversized.hdr
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/22 ; echo $(pwd) ; ./launch.sh -X  2mass-atlas-980914s-k0820044.fits   p2mass-atlas-980914s-k0820044.fits   region-oversized.hdr
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/21 ; echo $(pwd) ; ./launch.sh -X  2mass-atlas-001021s-k0490233.fits   p2mass-atlas-001021s-k0490233.fits   region-oversized.hdr
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/12 ; echo $(pwd) ; ./launch.sh -X  2mass-atlas-001021s-h0490233.fits   p2mass-atlas-001021s-h0490233.fits   region-oversized.hdr
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/11 ; echo $(pwd) ; ./launch.sh -X  2mass-atlas-980914s-h0820044.fits   p2mass-atlas-980914s-h0820044.fits   region-oversized.hdr
+1 0 /home/phil/test/1-master@172.16.192.14_5000/1
+[struct stat="OK", module="mProject", time=23.0]
+ 
+[INFO] [11/03/2021 11:38:14.641] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/1/p2mass-atlas-980914s-j0820044_area.fits for tasks : [6, 3]
+[INFO] [11/03/2021 11:38:14.642] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/1/p2mass-atlas-980914s-j0820044.fits for tasks : [6, 3]
+INPUT : /test/1-master@172.16.192.14_5000/1/p2mass-atlas-980914s-j0820044_area.fits
+INPUT : /test/1-master@172.16.192.14_5000/1/p2mass-atlas-980914s-j0820044.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-980914s-j0820044.fits /tmp/test/1-master@172.16.192.14_5000/6/p2mass-atlas-980914s-j0820044.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-980914s-j0820044_area.fits /tmp/test/1-master@172.16.192.14_5000/6/p2mass-atlas-980914s-j0820044_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-980914s-j0820044.fits /tmp/test/1-master@172.16.192.14_5000/3/p2mass-atlas-980914s-j0820044.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-980914s-j0820044_area.fits /tmp/test/1-master@172.16.192.14_5000/3/p2mass-atlas-980914s-j0820044_area.fits
+22 0 /home/phil/test/1-master@172.16.192.14_5000/22
+[struct stat="OK", module="mProject", time=22.0]
+ 
+[INFO] [11/03/2021 11:38:14.833] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/22/p2mass-atlas-980914s-k0820044.fits for tasks : [27, 23]
+[INFO] [11/03/2021 11:38:14.834] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/22/p2mass-atlas-980914s-k0820044_area.fits for tasks : [27, 23]
+INPUT : /test/1-master@172.16.192.14_5000/22/p2mass-atlas-980914s-k0820044.fits
+INPUT : /test/1-master@172.16.192.14_5000/22/p2mass-atlas-980914s-k0820044_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-980914s-k0820044_area.fits /tmp/test/1-master@172.16.192.14_5000/27/p2mass-atlas-980914s-k0820044_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-980914s-k0820044.fits /tmp/test/1-master@172.16.192.14_5000/27/p2mass-atlas-980914s-k0820044.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-980914s-k0820044_area.fits /tmp/test/1-master@172.16.192.14_5000/23/p2mass-atlas-980914s-k0820044_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-980914s-k0820044.fits /tmp/test/1-master@172.16.192.14_5000/23/p2mass-atlas-980914s-k0820044.fits
+11 0 /home/phil/test/1-master@172.16.192.14_5000/11
+[struct stat="OK", module="mProject", time=22.0]
+ 
+[INFO] [11/03/2021 11:38:14.977] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/11/p2mass-atlas-980914s-h0820044_area.fits for tasks : [13, 16]
+[INFO] [11/03/2021 11:38:14.978] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/11/p2mass-atlas-980914s-h0820044.fits for tasks : [13, 16]
+INPUT : /test/1-master@172.16.192.14_5000/11/p2mass-atlas-980914s-h0820044_area.fits
+INPUT : /test/1-master@172.16.192.14_5000/11/p2mass-atlas-980914s-h0820044.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-980914s-h0820044_area.fits /tmp/test/1-master@172.16.192.14_5000/13/p2mass-atlas-980914s-h0820044_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-980914s-h0820044.fits /tmp/test/1-master@172.16.192.14_5000/13/p2mass-atlas-980914s-h0820044.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-980914s-h0820044_area.fits /tmp/test/1-master@172.16.192.14_5000/16/p2mass-atlas-980914s-h0820044_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-980914s-h0820044.fits /tmp/test/1-master@172.16.192.14_5000/16/p2mass-atlas-980914s-h0820044.fits
+12 0 /home/phil/test/1-master@172.16.192.14_5000/12
+[struct stat="OK", module="mProject", time=24.0]
+ 
+[INFO] [11/03/2021 11:38:15.488] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/12/p2mass-atlas-001021s-h0490233.fits for tasks : [13, 17]
+[INFO] [11/03/2021 11:38:15.489] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/12/p2mass-atlas-001021s-h0490233_area.fits for tasks : [13, 17]
+INPUT : /test/1-master@172.16.192.14_5000/12/p2mass-atlas-001021s-h0490233.fits
+INPUT : /test/1-master@172.16.192.14_5000/12/p2mass-atlas-001021s-h0490233_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-001021s-h0490233.fits /tmp/test/1-master@172.16.192.14_5000/13/p2mass-atlas-001021s-h0490233.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-001021s-h0490233_area.fits /tmp/test/1-master@172.16.192.14_5000/13/p2mass-atlas-001021s-h0490233_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-001021s-h0490233_area.fits /tmp/test/1-master@172.16.192.14_5000/17/p2mass-atlas-001021s-h0490233_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-001021s-h0490233.fits /tmp/test/1-master@172.16.192.14_5000/17/p2mass-atlas-001021s-h0490233.fits
+2 0 /home/phil/test/1-master@172.16.192.14_5000/2
+[struct stat="OK", module="mProject", time=24.0]
+ 
+[INFO] [11/03/2021 11:38:15.634] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 13 task /1-master@172.16.192.14_5000/mDiffFit
+[INFO] [11/03/2021 11:38:15.635] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/2/p2mass-atlas-001021s-j0490233_area.fits for tasks : [7, 3]
+[INFO] [11/03/2021 11:38:15.636] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/2/p2mass-atlas-001021s-j0490233.fits for tasks : [7, 3]
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mDiffFit -o /tmp/test/1-master@172.16.192.14_5000/13/exec.tar)
+INPUT : /test/1-master@172.16.192.14_5000/2/p2mass-atlas-001021s-j0490233.fits
+INPUT : /test/1-master@172.16.192.14_5000/2/p2mass-atlas-001021s-j0490233_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-001021s-j0490233_area.fits /tmp/test/1-master@172.16.192.14_5000/7/p2mass-atlas-001021s-j0490233_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-001021s-j0490233.fits /tmp/test/1-master@172.16.192.14_5000/7/p2mass-atlas-001021s-j0490233.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-001021s-j0490233.fits /tmp/test/1-master@172.16.192.14_5000/3/p2mass-atlas-001021s-j0490233.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-001021s-j0490233_area.fits /tmp/test/1-master@172.16.192.14_5000/3/p2mass-atlas-001021s-j0490233_area.fits
+CURL : 
+[INFO] [11/03/2021 11:38:15.689] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/13
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/13 ; echo $(pwd) ; ./launch.sh -d -s  2-fit.000001.000002.txt   p2mass-atlas-980914s-h0820044.fits   p2mass-atlas-001021s-h0490233.fits   2-diff.000001.000002.fits   region-oversized.hdr
+21 0 /home/phil/test/1-master@172.16.192.14_5000/21
+[struct stat="OK", module="mProject", time=23.0]
+ 
+[INFO] [11/03/2021 11:38:15.762] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/21/p2mass-atlas-001021s-k0490233.fits for tasks : [26, 23]
+[INFO] [11/03/2021 11:38:15.762] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/21/p2mass-atlas-001021s-k0490233_area.fits for tasks : [26, 23]
+INPUT : /test/1-master@172.16.192.14_5000/21/p2mass-atlas-001021s-k0490233.fits
+INPUT : /test/1-master@172.16.192.14_5000/21/p2mass-atlas-001021s-k0490233_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-001021s-k0490233.fits /tmp/test/1-master@172.16.192.14_5000/26/p2mass-atlas-001021s-k0490233.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-001021s-k0490233_area.fits /tmp/test/1-master@172.16.192.14_5000/26/p2mass-atlas-001021s-k0490233_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-001021s-k0490233_area.fits /tmp/test/1-master@172.16.192.14_5000/23/p2mass-atlas-001021s-k0490233_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/p2mass-atlas-001021s-k0490233.fits /tmp/test/1-master@172.16.192.14_5000/23/p2mass-atlas-001021s-k0490233.fits
+13 0 /home/phil/test/1-master@172.16.192.14_5000/13
+SVC_DEBUG>  svc_debug(): ON<br>
+[mDiff p2mass-atlas-980914s-h0820044.fits p2mass-atlas-001021s-h0490233.fits 2-diff.000001.000002.fits region-oversized.hdr]
+SVC_DEBUG>  Entering svc_run()<br>
+SVC_DEBUG>  svc_run(): svcstr = [mDiff p2mass-atlas-980914s-h0820044.fits p2mass-atlas-001021s-h0490233.fits 2-diff.000001.000002.fits region-oversized.hdr]<br>
+SVC_DEBUG>  Entering svc_init()<br>
+SVC_DEBUG>  svc_init(): svcstr = [mDiff p2mass-atlas-980914s-h0820044.fits p2mass-atlas-001021s-h0490233.fits 2-diff.000001.000002.fits region-oversized.hdr]<br>
+SVC_DEBUG>  Entering svc_alloc()<br>
+SVC_DEBUG>  svc_alloc(): allocated 32 service slots [@0x56422253f490]<br>
+SVC_DEBUG>  Entering svc_getargs()<br>
+SVC_DEBUG>  svc_init(): index = 0<br>
+SVC_DEBUG>  svc_init(): pid   = 74<br>
+SVC_DEBUG>  svc_init(): path  = mDiff<br>
+SVC_DEBUG>  svc_init(): fdin  = 5<br>
+SVC_DEBUG>  svc_init(): fdout = 6<br>
+SVC_DEBUG>  svc_run(): index (from svc_init()) = 0<br>
+SVC_DEBUG>  Entering svc_receive()<br>
+SVC_DEBUG>  Entering svc_fgets()<br>
+SVC_DEBUG>  svc_fgets(): Allocate string space [@0x564222540860]<br>
+SVC_DEBUG>  Entering svc_check()<br>
+SVC_DEBUG>  svc_receive(): Receiving [[struct stat="OK"]]<br>
+SVC_DEBUG>  Entering svc_close()<br>
+SVC_DEBUG>  Entering svc_check()<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [stat] -> [OK] [@0x564222542880]<br>
+[mFitplane -b 0 2-diff.000001.000002.fits]
+SVC_DEBUG>  Entering svc_run()<br>
+SVC_DEBUG>  svc_run(): svcstr = [mFitplane -b 0 2-diff.000001.000002.fits]<br>
+SVC_DEBUG>  Entering svc_init()<br>
+SVC_DEBUG>  svc_init(): svcstr = [mFitplane -b 0 2-diff.000001.000002.fits]<br>
+SVC_DEBUG>  Entering svc_alloc()<br>
+SVC_DEBUG>  Entering svc_getargs()<br>
+SVC_DEBUG>  svc_init(): index = 0<br>
+SVC_DEBUG>  svc_init(): pid   = 75<br>
+SVC_DEBUG>  svc_init(): path  = mFitplane<br>
+SVC_DEBUG>  svc_init(): fdin  = 5<br>
+SVC_DEBUG>  svc_init(): fdout = 6<br>
+SVC_DEBUG>  svc_run(): index (from svc_init()) = 0<br>
+SVC_DEBUG>  Entering svc_receive()<br>
+SVC_DEBUG>  Entering svc_fgets()<br>
+SVC_DEBUG>  svc_fgets(): Allocate string space [@0x564222540860]<br>
+SVC_DEBUG>  Entering svc_check()<br>
+SVC_DEBUG>  svc_receive(): Receiving [[struct stat="OK", a=-0.000784006, b=0.001744, c=-41.4116, crpix1=291.5, crpix2=500.5, xmin=-291.5, xmax=212.5, ymin=-499.5, ymax=323.5, xcenter=-38.5772, ycenter=-86.3255, npixel=352957, rms=0.82358, boxx=-39.5, boxy=-88, boxwidth=825, boxheight=504, boxang=90]]<br>
+SVC_DEBUG>  Entering svc_close()<br>
+SVC_DEBUG>  Entering svc_check()<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [stat] -> [OK] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [a] -> [-0.000784006] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [b] -> [0.001744] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [c] -> [-41.4116] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [crpix1] -> [291.5] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [crpix2] -> [500.5] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [xmin] -> [-291.5] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [xmax] -> [212.5] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [ymin] -> [-499.5] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [ymax] -> [323.5] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [xcenter] -> [-38.5772] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [ycenter] -> [-86.3255] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [npixel] -> [352957] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [rms] -> [0.82358] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxx] -> [-39.5] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxy] -> [-88] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxwidth] -> [825] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxheight] -> [504] [@0x564222643290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxang] -> [90] [@0x564222643290]<br>
+ 
+[INFO] [11/03/2021 11:38:16.233] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/13/2-fit.000001.000002.txt for tasks : [14]
+INPUT : /test/1-master@172.16.192.14_5000/13/2-fit.000001.000002.txt
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2-fit.000001.000002.txt /tmp/test/1-master@172.16.192.14_5000/14/2-fit.000001.000002.txt
+[INFO] [11/03/2021 11:38:16.634] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 3 task /1-master@172.16.192.14_5000/mDiffFit
+[INFO] [11/03/2021 11:38:16.634] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 23 task /1-master@172.16.192.14_5000/mDiffFit
+[INFO] [11/03/2021 11:38:16.635] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 14 task /1-master@172.16.192.14_5000/mConcatFit
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mDiffFit -o /tmp/test/1-master@172.16.192.14_5000/23/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mConcatFit -o /tmp/test/1-master@172.16.192.14_5000/14/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mDiffFit -o /tmp/test/1-master@172.16.192.14_5000/3/exec.tar)
+CURL : 
+[INFO] [11/03/2021 11:38:16.663] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/14
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/14 ; echo $(pwd) ; ./launch.sh  2-stat.tbl   2-fits.tbl  .
+CURL : 
+CURL : 
+[INFO] [11/03/2021 11:38:16.698] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/3
+[INFO] [11/03/2021 11:38:16.698] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/23
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/23 ; echo $(pwd) ; ./launch.sh -d -s  3-fit.000001.000002.txt   p2mass-atlas-001021s-k0490233.fits   p2mass-atlas-980914s-k0820044.fits   3-diff.000001.000002.fits   region-oversized.hdr
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/3 ; echo $(pwd) ; ./launch.sh -d -s  1-fit.000001.000002.txt   p2mass-atlas-980914s-j0820044.fits   p2mass-atlas-001021s-j0490233.fits   1-diff.000001.000002.fits   region-oversized.hdr
+14 0 /home/phil/test/1-master@172.16.192.14_5000/14
+[struct stat="OK", count=1, failed=0, missing=0, warning=0]
+ 
+[INFO] [11/03/2021 11:38:16.891] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/14/2-fits.tbl for tasks : [15]
+INPUT : /test/1-master@172.16.192.14_5000/14/2-fits.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2-fits.tbl /tmp/test/1-master@172.16.192.14_5000/15/2-fits.tbl
+3 0 /home/phil/test/1-master@172.16.192.14_5000/3
+SVC_DEBUG>  svc_debug(): ON<br>
+[mDiff p2mass-atlas-980914s-j0820044.fits p2mass-atlas-001021s-j0490233.fits 1-diff.000001.000002.fits region-oversized.hdr]
+SVC_DEBUG>  Entering svc_run()<br>
+SVC_DEBUG>  svc_run(): svcstr = [mDiff p2mass-atlas-980914s-j0820044.fits p2mass-atlas-001021s-j0490233.fits 1-diff.000001.000002.fits region-oversized.hdr]<br>
+SVC_DEBUG>  Entering svc_init()<br>
+SVC_DEBUG>  svc_init(): svcstr = [mDiff p2mass-atlas-980914s-j0820044.fits p2mass-atlas-001021s-j0490233.fits 1-diff.000001.000002.fits region-oversized.hdr]<br>
+SVC_DEBUG>  Entering svc_alloc()<br>
+SVC_DEBUG>  svc_alloc(): allocated 32 service slots [@0x55e5b3b2d490]<br>
+SVC_DEBUG>  Entering svc_getargs()<br>
+SVC_DEBUG>  svc_init(): index = 0<br>
+SVC_DEBUG>  svc_init(): pid   = 96<br>
+SVC_DEBUG>  svc_init(): path  = mDiff<br>
+SVC_DEBUG>  svc_init(): fdin  = 5<br>
+SVC_DEBUG>  svc_init(): fdout = 6<br>
+SVC_DEBUG>  svc_run(): index (from svc_init()) = 0<br>
+SVC_DEBUG>  Entering svc_receive()<br>
+SVC_DEBUG>  Entering svc_fgets()<br>
+SVC_DEBUG>  svc_fgets(): Allocate string space [@0x55e5b3b2e860]<br>
+SVC_DEBUG>  Entering svc_check()<br>
+SVC_DEBUG>  svc_receive(): Receiving [[struct stat="OK"]]<br>
+SVC_DEBUG>  Entering svc_close()<br>
+SVC_DEBUG>  Entering svc_check()<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [stat] -> [OK] [@0x55e5b3b30880]<br>
+[mFitplane -b 0 1-diff.000001.000002.fits]
+SVC_DEBUG>  Entering svc_run()<br>
+SVC_DEBUG>  svc_run(): svcstr = [mFitplane -b 0 1-diff.000001.000002.fits]<br>
+SVC_DEBUG>  Entering svc_init()<br>
+SVC_DEBUG>  svc_init(): svcstr = [mFitplane -b 0 1-diff.000001.000002.fits]<br>
+SVC_DEBUG>  Entering svc_alloc()<br>
+SVC_DEBUG>  Entering svc_getargs()<br>
+SVC_DEBUG>  svc_init(): index = 0<br>
+SVC_DEBUG>  svc_init(): pid   = 108<br>
+SVC_DEBUG>  svc_init(): path  = mFitplane<br>
+SVC_DEBUG>  svc_init(): fdin  = 5<br>
+SVC_DEBUG>  svc_init(): fdout = 6<br>
+SVC_DEBUG>  svc_run(): index (from svc_init()) = 0<br>
+SVC_DEBUG>  Entering svc_receive()<br>
+SVC_DEBUG>  Entering svc_fgets()<br>
+SVC_DEBUG>  svc_fgets(): Allocate string space [@0x55e5b3b2e860]<br>
+SVC_DEBUG>  Entering svc_check()<br>
+SVC_DEBUG>  svc_receive(): Receiving [[struct stat="OK", a=-0.000136785, b=0.000217362, c=0.395619, crpix1=288.5, crpix2=500.5, xmin=-288.5, xmax=213.5, ymin=-499.5, ymax=323.5, xcenter=-38.13, ycenter=-88.2721, npixel=353105, rms=0.516108, boxx=-37.5, boxy=-88, boxwidth=825, boxheight=502, boxang=90]]<br>
+SVC_DEBUG>  Entering svc_close()<br>
+SVC_DEBUG>  Entering svc_check()<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [stat] -> [OK] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [a] -> [-0.000136785] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [b] -> [0.000217362] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [c] -> [0.395619] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [crpix1] -> [288.5] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [crpix2] -> [500.5] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [xmin] -> [-288.5] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [xmax] -> [213.5] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [ymin] -> [-499.5] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [ymax] -> [323.5] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [xcenter] -> [-38.13] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [ycenter] -> [-88.2721] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [npixel] -> [353105] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [rms] -> [0.516108] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxx] -> [-37.5] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxy] -> [-88] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxwidth] -> [825] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxheight] -> [502] [@0x55e5b3c31290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxang] -> [90] [@0x55e5b3c31290]<br>
+ 
+[INFO] [11/03/2021 11:38:17.226] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/3/1-fit.000001.000002.txt for tasks : [4]
+INPUT : /test/1-master@172.16.192.14_5000/3/1-fit.000001.000002.txt
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/1-fit.000001.000002.txt /tmp/test/1-master@172.16.192.14_5000/4/1-fit.000001.000002.txt
+23 0 /home/phil/test/1-master@172.16.192.14_5000/23
+SVC_DEBUG>  svc_debug(): ON<br>
+[mDiff p2mass-atlas-001021s-k0490233.fits p2mass-atlas-980914s-k0820044.fits 3-diff.000001.000002.fits region-oversized.hdr]
+SVC_DEBUG>  Entering svc_run()<br>
+SVC_DEBUG>  svc_run(): svcstr = [mDiff p2mass-atlas-001021s-k0490233.fits p2mass-atlas-980914s-k0820044.fits 3-diff.000001.000002.fits region-oversized.hdr]<br>
+SVC_DEBUG>  Entering svc_init()<br>
+SVC_DEBUG>  svc_init(): svcstr = [mDiff p2mass-atlas-001021s-k0490233.fits p2mass-atlas-980914s-k0820044.fits 3-diff.000001.000002.fits region-oversized.hdr]<br>
+SVC_DEBUG>  Entering svc_alloc()<br>
+SVC_DEBUG>  svc_alloc(): allocated 32 service slots [@0x55815c489490]<br>
+SVC_DEBUG>  Entering svc_getargs()<br>
+SVC_DEBUG>  svc_init(): index = 0<br>
+SVC_DEBUG>  svc_init(): pid   = 107<br>
+SVC_DEBUG>  svc_init(): path  = mDiff<br>
+SVC_DEBUG>  svc_init(): fdin  = 5<br>
+SVC_DEBUG>  svc_init(): fdout = 6<br>
+SVC_DEBUG>  svc_run(): index (from svc_init()) = 0<br>
+SVC_DEBUG>  Entering svc_receive()<br>
+SVC_DEBUG>  Entering svc_fgets()<br>
+SVC_DEBUG>  svc_fgets(): Allocate string space [@0x55815c48a860]<br>
+SVC_DEBUG>  Entering svc_check()<br>
+SVC_DEBUG>  svc_receive(): Receiving [[struct stat="OK"]]<br>
+SVC_DEBUG>  Entering svc_close()<br>
+SVC_DEBUG>  Entering svc_check()<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [stat] -> [OK] [@0x55815c48c880]<br>
+[mFitplane -b 0 3-diff.000001.000002.fits]
+SVC_DEBUG>  Entering svc_run()<br>
+SVC_DEBUG>  svc_run(): svcstr = [mFitplane -b 0 3-diff.000001.000002.fits]<br>
+SVC_DEBUG>  Entering svc_init()<br>
+SVC_DEBUG>  svc_init(): svcstr = [mFitplane -b 0 3-diff.000001.000002.fits]<br>
+SVC_DEBUG>  Entering svc_alloc()<br>
+SVC_DEBUG>  Entering svc_getargs()<br>
+SVC_DEBUG>  svc_init(): index = 0<br>
+SVC_DEBUG>  svc_init(): pid   = 109<br>
+SVC_DEBUG>  svc_init(): path  = mFitplane<br>
+SVC_DEBUG>  svc_init(): fdin  = 5<br>
+SVC_DEBUG>  svc_init(): fdout = 6<br>
+SVC_DEBUG>  svc_run(): index (from svc_init()) = 0<br>
+SVC_DEBUG>  Entering svc_receive()<br>
+SVC_DEBUG>  Entering svc_fgets()<br>
+SVC_DEBUG>  svc_fgets(): Allocate string space [@0x55815c48a860]<br>
+SVC_DEBUG>  Entering svc_check()<br>
+SVC_DEBUG>  svc_receive(): Receiving [[struct stat="OK", a=0.000146493, b=-0.000287989, c=62.962, crpix1=289.5, crpix2=500.5, xmin=-288.5, xmax=212.5, ymin=-499.5, ymax=323.5, xcenter=-38.1222, ycenter=-87.647, npixel=351166, rms=0.917129, boxx=-38.5, boxy=-88, boxwidth=825, boxheight=502, boxang=90]]<br>
+SVC_DEBUG>  Entering svc_close()<br>
+SVC_DEBUG>  Entering svc_check()<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [stat] -> [OK] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [a] -> [0.000146493] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [b] -> [-0.000287989] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [c] -> [62.962] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [crpix1] -> [289.5] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [crpix2] -> [500.5] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [xmin] -> [-288.5] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [xmax] -> [212.5] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [ymin] -> [-499.5] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [ymax] -> [323.5] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [xcenter] -> [-38.1222] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [ycenter] -> [-87.647] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [npixel] -> [351166] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [rms] -> [0.917129] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxx] -> [-38.5] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxy] -> [-88] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxwidth] -> [825] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxheight] -> [502] [@0x55815c58d290]<br>
+SVC_DEBUG>  Entering svc_value()<br>
+SVC_DEBUG>  svc_value(): [boxang] -> [90] [@0x55815c58d290]<br>
+ 
+[INFO] [11/03/2021 11:38:17.262] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/23/3-fit.000001.000002.txt for tasks : [24]
+INPUT : /test/1-master@172.16.192.14_5000/23/3-fit.000001.000002.txt
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/3-fit.000001.000002.txt /tmp/test/1-master@172.16.192.14_5000/24/3-fit.000001.000002.txt
+[INFO] [11/03/2021 11:38:17.633] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 4 task /1-master@172.16.192.14_5000/mConcatFit
+[INFO] [11/03/2021 11:38:17.634] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 24 task /1-master@172.16.192.14_5000/mConcatFit
+[INFO] [11/03/2021 11:38:17.634] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 15 task /1-master@172.16.192.14_5000/mBgModel
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mConcatFit -o /tmp/test/1-master@172.16.192.14_5000/4/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mBgModel -o /tmp/test/1-master@172.16.192.14_5000/15/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mConcatFit -o /tmp/test/1-master@172.16.192.14_5000/24/exec.tar)
+CURL : 
+CURL : 
+[INFO] [11/03/2021 11:38:17.651] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/4
+[INFO] [11/03/2021 11:38:17.651] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/24
+CURL : 
+[INFO] [11/03/2021 11:38:17.654] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/15
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/4 ; echo $(pwd) ; ./launch.sh  1-stat.tbl   1-fits.tbl  .
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/24 ; echo $(pwd) ; ./launch.sh  3-stat.tbl   3-fits.tbl  .
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/15 ; echo $(pwd) ; ./launch.sh -i 100000  2-images.tbl   2-fits.tbl   2-corrections.tbl
+24 0 /home/phil/test/1-master@172.16.192.14_5000/24
+[struct stat="OK", count=1, failed=0, missing=0, warning=0]
+ 
+4 0 /home/phil/test/1-master@172.16.192.14_5000/4
+[struct stat="OK", count=1, failed=0, missing=0, warning=0]
+ 
+[INFO] [11/03/2021 11:38:17.877] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/24/3-fits.tbl for tasks : [25]
+[INFO] [11/03/2021 11:38:17.879] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/4/1-fits.tbl for tasks : [5]
+INPUT : /test/1-master@172.16.192.14_5000/24/3-fits.tbl
+INPUT : /test/1-master@172.16.192.14_5000/4/1-fits.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/3-fits.tbl /tmp/test/1-master@172.16.192.14_5000/25/3-fits.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/1-fits.tbl /tmp/test/1-master@172.16.192.14_5000/5/1-fits.tbl
+15 0 /home/phil/test/1-master@172.16.192.14_5000/15
+[struct stat="OK"]
+ 
+[INFO] [11/03/2021 11:38:18.083] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/15/2-corrections.tbl for tasks : [17, 16]
+INPUT : /test/1-master@172.16.192.14_5000/15/2-corrections.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2-corrections.tbl /tmp/test/1-master@172.16.192.14_5000/17/2-corrections.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2-corrections.tbl /tmp/test/1-master@172.16.192.14_5000/16/2-corrections.tbl
+[INFO] [11/03/2021 11:38:18.634] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 25 task /1-master@172.16.192.14_5000/mBgModel
+[INFO] [11/03/2021 11:38:18.634] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 5 task /1-master@172.16.192.14_5000/mBgModel
+[INFO] [11/03/2021 11:38:18.635] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 17 task /1-master@172.16.192.14_5000/mBackground
+[INFO] [11/03/2021 11:38:18.635] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 16 task /1-master@172.16.192.14_5000/mBackground
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mBgModel -o /tmp/test/1-master@172.16.192.14_5000/25/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mBackground -o /tmp/test/1-master@172.16.192.14_5000/16/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mBgModel -o /tmp/test/1-master@172.16.192.14_5000/5/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mBackground -o /tmp/test/1-master@172.16.192.14_5000/17/exec.tar)
+CURL : 
+[INFO] [11/03/2021 11:38:18.653] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/5
+CURL : 
+[INFO] [11/03/2021 11:38:18.655] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/25
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/5 ; echo $(pwd) ; ./launch.sh -i 100000  1-images.tbl   1-fits.tbl   1-corrections.tbl
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/25 ; echo $(pwd) ; ./launch.sh -i 100000  3-images.tbl   3-fits.tbl   3-corrections.tbl
+CURL : 
+[INFO] [11/03/2021 11:38:18.664] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/16
+CURL : 
+[INFO] [11/03/2021 11:38:18.666] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/17
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/16 ; echo $(pwd) ; ./launch.sh -t  p2mass-atlas-980914s-h0820044.fits   c2mass-atlas-980914s-h0820044.fits   2-projected.tbl   2-corrections.tbl
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/17 ; echo $(pwd) ; ./launch.sh -t  p2mass-atlas-001021s-h0490233.fits   c2mass-atlas-001021s-h0490233.fits   2-projected.tbl   2-corrections.tbl
+17 0 /home/phil/test/1-master@172.16.192.14_5000/17
+[struct stat="OK"]
+ 
+[INFO] [11/03/2021 11:38:18.953] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/17/c2mass-atlas-001021s-h0490233_area.fits for tasks : [19]
+[INFO] [11/03/2021 11:38:18.953] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/17/c2mass-atlas-001021s-h0490233.fits for tasks : [18, 19]
+INPUT : /test/1-master@172.16.192.14_5000/17/c2mass-atlas-001021s-h0490233_area.fits
+INPUT : /test/1-master@172.16.192.14_5000/17/c2mass-atlas-001021s-h0490233.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-001021s-h0490233.fits /tmp/test/1-master@172.16.192.14_5000/18/c2mass-atlas-001021s-h0490233.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-001021s-h0490233_area.fits /tmp/test/1-master@172.16.192.14_5000/19/c2mass-atlas-001021s-h0490233_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-001021s-h0490233.fits /tmp/test/1-master@172.16.192.14_5000/19/c2mass-atlas-001021s-h0490233.fits
+16 0 /home/phil/test/1-master@172.16.192.14_5000/16
+[struct stat="OK"]
+ 
+5 0 /home/phil/test/1-master@172.16.192.14_5000/5
+[struct stat="OK"]
+ 
+[INFO] [11/03/2021 11:38:19.025] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/5/1-corrections.tbl for tasks : [6, 7]
+[INFO] [11/03/2021 11:38:19.025] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/16/c2mass-atlas-980914s-h0820044_area.fits for tasks : [19]
+[INFO] [11/03/2021 11:38:19.026] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/16/c2mass-atlas-980914s-h0820044.fits for tasks : [18, 19]
+INPUT : /test/1-master@172.16.192.14_5000/16/c2mass-atlas-980914s-h0820044_area.fits
+INPUT : /test/1-master@172.16.192.14_5000/16/c2mass-atlas-980914s-h0820044.fits
+INPUT : /test/1-master@172.16.192.14_5000/5/1-corrections.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/1-corrections.tbl /tmp/test/1-master@172.16.192.14_5000/6/1-corrections.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/1-corrections.tbl /tmp/test/1-master@172.16.192.14_5000/7/1-corrections.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-980914s-h0820044.fits /tmp/test/1-master@172.16.192.14_5000/18/c2mass-atlas-980914s-h0820044.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-980914s-h0820044_area.fits /tmp/test/1-master@172.16.192.14_5000/19/c2mass-atlas-980914s-h0820044_area.fits
+25 0 /home/phil/test/1-master@172.16.192.14_5000/25
+[struct stat="OK"]
+ 
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-980914s-h0820044.fits /tmp/test/1-master@172.16.192.14_5000/19/c2mass-atlas-980914s-h0820044.fits
+[INFO] [11/03/2021 11:38:19.064] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/25/3-corrections.tbl for tasks : [27, 26]
+INPUT : /test/1-master@172.16.192.14_5000/25/3-corrections.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/3-corrections.tbl /tmp/test/1-master@172.16.192.14_5000/27/3-corrections.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/3-corrections.tbl /tmp/test/1-master@172.16.192.14_5000/26/3-corrections.tbl
+[INFO] [11/03/2021 11:38:19.635] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 6 task /1-master@172.16.192.14_5000/mBackground
+[INFO] [11/03/2021 11:38:19.635] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 7 task /1-master@172.16.192.14_5000/mBackground
+[INFO] [11/03/2021 11:38:19.636] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 27 task /1-master@172.16.192.14_5000/mBackground
+[INFO] [11/03/2021 11:38:19.637] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 26 task /1-master@172.16.192.14_5000/mBackground
+[INFO] [11/03/2021 11:38:19.637] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 18 task /1-master@172.16.192.14_5000/mImgtbl
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mBackground -o /tmp/test/1-master@172.16.192.14_5000/6/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mBackground -o /tmp/test/1-master@172.16.192.14_5000/27/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mBackground -o /tmp/test/1-master@172.16.192.14_5000/7/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mBackground -o /tmp/test/1-master@172.16.192.14_5000/26/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mImgtbl -o /tmp/test/1-master@172.16.192.14_5000/18/exec.tar)
+CURL : 
+[INFO] [11/03/2021 11:38:19.663] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/6
+CURL : 
+[INFO] [11/03/2021 11:38:19.670] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/7
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/6 ; echo $(pwd) ; ./launch.sh -t  p2mass-atlas-980914s-j0820044.fits   c2mass-atlas-980914s-j0820044.fits   1-projected.tbl   1-corrections.tbl
+CURL : 
+[INFO] [11/03/2021 11:38:19.678] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/18
+CURL : 
+CURL : 
+[INFO] [11/03/2021 11:38:19.679] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/27
+[INFO] [11/03/2021 11:38:19.679] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/26
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/7 ; echo $(pwd) ; ./launch.sh -t  p2mass-atlas-001021s-j0490233.fits   c2mass-atlas-001021s-j0490233.fits   1-projected.tbl   1-corrections.tbl
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/18 ; echo $(pwd) ; ./launch.sh . -t  2-corrected.tbl   2-updated-corrected.tbl
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/27 ; echo $(pwd) ; ./launch.sh -t  p2mass-atlas-980914s-k0820044.fits   c2mass-atlas-980914s-k0820044.fits   3-projected.tbl   3-corrections.tbl
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/26 ; echo $(pwd) ; ./launch.sh -t  p2mass-atlas-001021s-k0490233.fits   c2mass-atlas-001021s-k0490233.fits   3-projected.tbl   3-corrections.tbl
+6 0 /home/phil/test/1-master@172.16.192.14_5000/6
+[struct stat="OK"]
+ 
+[INFO] [11/03/2021 11:38:19.965] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/6/c2mass-atlas-980914s-j0820044.fits for tasks : [9, 8]
+[INFO] [11/03/2021 11:38:19.966] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/6/c2mass-atlas-980914s-j0820044_area.fits for tasks : [9]
+INPUT : /test/1-master@172.16.192.14_5000/6/c2mass-atlas-980914s-j0820044.fits
+INPUT : /test/1-master@172.16.192.14_5000/6/c2mass-atlas-980914s-j0820044_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-980914s-j0820044_area.fits /tmp/test/1-master@172.16.192.14_5000/9/c2mass-atlas-980914s-j0820044_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-980914s-j0820044.fits /tmp/test/1-master@172.16.192.14_5000/9/c2mass-atlas-980914s-j0820044.fits
+7 0 /home/phil/test/1-master@172.16.192.14_5000/7
+[struct stat="OK"]
+ 
+26 0 /home/phil/test/1-master@172.16.192.14_5000/26
+[struct stat="OK"]
+ 
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-980914s-j0820044.fits /tmp/test/1-master@172.16.192.14_5000/8/c2mass-atlas-980914s-j0820044.fits
+[INFO] [11/03/2021 11:38:20.010] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/7/c2mass-atlas-001021s-j0490233_area.fits for tasks : [9]
+[INFO] [11/03/2021 11:38:20.011] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/7/c2mass-atlas-001021s-j0490233.fits for tasks : [9, 8]
+[INFO] [11/03/2021 11:38:20.012] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/26/c2mass-atlas-001021s-k0490233.fits for tasks : [29, 28]
+[INFO] [11/03/2021 11:38:20.013] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/26/c2mass-atlas-001021s-k0490233_area.fits for tasks : [29]
+INPUT : /test/1-master@172.16.192.14_5000/7/c2mass-atlas-001021s-j0490233.fits
+INPUT : /test/1-master@172.16.192.14_5000/7/c2mass-atlas-001021s-j0490233_area.fits
+INPUT : /test/1-master@172.16.192.14_5000/26/c2mass-atlas-001021s-k0490233.fits
+INPUT : /test/1-master@172.16.192.14_5000/26/c2mass-atlas-001021s-k0490233_area.fits
+18 0 /home/phil/test/1-master@172.16.192.14_5000/18
+[struct stat="OK", count=2, badfits=0, badwcs=0]
+ 
+27 0 /home/phil/test/1-master@172.16.192.14_5000/27
+[struct stat="OK"]
+ 
+[INFO] [11/03/2021 11:38:20.037] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/18/2-updated-corrected.tbl for tasks : [19]
+INPUT : /test/1-master@172.16.192.14_5000/18/2-updated-corrected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-001021s-j0490233.fits /tmp/test/1-master@172.16.192.14_5000/9/c2mass-atlas-001021s-j0490233.fits
+[INFO] [11/03/2021 11:38:20.043] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/27/c2mass-atlas-980914s-k0820044_area.fits for tasks : [29]
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-001021s-k0490233_area.fits /tmp/test/1-master@172.16.192.14_5000/29/c2mass-atlas-001021s-k0490233_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-001021s-k0490233.fits /tmp/test/1-master@172.16.192.14_5000/29/c2mass-atlas-001021s-k0490233.fits
+[INFO] [11/03/2021 11:38:20.044] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/27/c2mass-atlas-980914s-k0820044.fits for tasks : [29, 28]
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-001021s-j0490233_area.fits /tmp/test/1-master@172.16.192.14_5000/9/c2mass-atlas-001021s-j0490233_area.fits
+INPUT : /test/1-master@172.16.192.14_5000/27/c2mass-atlas-980914s-k0820044_area.fits
+INPUT : /test/1-master@172.16.192.14_5000/27/c2mass-atlas-980914s-k0820044.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-001021s-j0490233.fits /tmp/test/1-master@172.16.192.14_5000/8/c2mass-atlas-001021s-j0490233.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-001021s-k0490233.fits /tmp/test/1-master@172.16.192.14_5000/28/c2mass-atlas-001021s-k0490233.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2-updated-corrected.tbl /tmp/test/1-master@172.16.192.14_5000/19/2-updated-corrected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-980914s-k0820044.fits /tmp/test/1-master@172.16.192.14_5000/29/c2mass-atlas-980914s-k0820044.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-980914s-k0820044_area.fits /tmp/test/1-master@172.16.192.14_5000/29/c2mass-atlas-980914s-k0820044_area.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/c2mass-atlas-980914s-k0820044.fits /tmp/test/1-master@172.16.192.14_5000/28/c2mass-atlas-980914s-k0820044.fits
+[INFO] [11/03/2021 11:38:20.634] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 8 task /1-master@172.16.192.14_5000/mImgtbl
+[INFO] [11/03/2021 11:38:20.635] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 28 task /1-master@172.16.192.14_5000/mImgtbl
+[INFO] [11/03/2021 11:38:20.635] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 19 task /1-master@172.16.192.14_5000/mAdd
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mImgtbl -o /tmp/test/1-master@172.16.192.14_5000/8/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mImgtbl -o /tmp/test/1-master@172.16.192.14_5000/28/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mAdd -o /tmp/test/1-master@172.16.192.14_5000/19/exec.tar)
+CURL : 
+CURL : 
+[INFO] [11/03/2021 11:38:20.665] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/28
+[INFO] [11/03/2021 11:38:20.665] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/8
+CURL : 
+[INFO] [11/03/2021 11:38:20.673] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/19
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/28 ; echo $(pwd) ; ./launch.sh . -t  3-corrected.tbl   3-updated-corrected.tbl
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/8 ; echo $(pwd) ; ./launch.sh . -t  1-corrected.tbl   1-updated-corrected.tbl
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/19 ; echo $(pwd) ; ./launch.sh -e  2-updated-corrected.tbl   region.hdr   2-mosaic.fits
+8 0 /home/phil/test/1-master@172.16.192.14_5000/8
+[struct stat="OK", count=2, badfits=0, badwcs=0]
+ 
+[INFO] [11/03/2021 11:38:20.868] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/8/1-updated-corrected.tbl for tasks : [9]
+INPUT : /test/1-master@172.16.192.14_5000/8/1-updated-corrected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/1-updated-corrected.tbl /tmp/test/1-master@172.16.192.14_5000/9/1-updated-corrected.tbl
+28 0 /home/phil/test/1-master@172.16.192.14_5000/28
+[struct stat="OK", count=2, badfits=0, badwcs=0]
+ 
+[INFO] [11/03/2021 11:38:20.935] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/28/3-updated-corrected.tbl for tasks : [29]
+INPUT : /test/1-master@172.16.192.14_5000/28/3-updated-corrected.tbl
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/3-updated-corrected.tbl /tmp/test/1-master@172.16.192.14_5000/29/3-updated-corrected.tbl
+19 0 /home/phil/test/1-master@172.16.192.14_5000/19
+[struct stat="OK", time=0]
+ 
+[INFO] [11/03/2021 11:38:20.972] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/19/2-mosaic.fits for tasks : [20, 31]
+INPUT : /test/1-master@172.16.192.14_5000/19/2-mosaic.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2-mosaic.fits /tmp/test/1-master@172.16.192.14_5000/20/2-mosaic.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/2-mosaic.fits /tmp/test/1-master@172.16.192.14_5000/31/2-mosaic.fits
+[INFO] [11/03/2021 11:38:21.634] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 9 task /1-master@172.16.192.14_5000/mAdd
+[INFO] [11/03/2021 11:38:21.635] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 29 task /1-master@172.16.192.14_5000/mAdd
+[INFO] [11/03/2021 11:38:21.635] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 20 task /1-master@172.16.192.14_5000/mJPEG
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mAdd -o /tmp/test/1-master@172.16.192.14_5000/9/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mAdd -o /tmp/test/1-master@172.16.192.14_5000/29/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mJPEG -o /tmp/test/1-master@172.16.192.14_5000/20/exec.tar)
+CURL : 
+CURL : 
+[INFO] [11/03/2021 11:38:21.670] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/20
+[INFO] [11/03/2021 11:38:21.670] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/29
+CURL : 
+[INFO] [11/03/2021 11:38:21.675] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/9
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/20 ; echo $(pwd) ; ./launch.sh -ct 0 -gray  2-mosaic.fits  0s 99.999% gaussian -out  2-mosaic.jpg
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/29 ; echo $(pwd) ; ./launch.sh -e  3-updated-corrected.tbl   region.hdr   3-mosaic.fits
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/9 ; echo $(pwd) ; ./launch.sh -e  1-updated-corrected.tbl   region.hdr   1-mosaic.fits
+20 0 /home/phil/test/1-master@172.16.192.14_5000/20
+[struct stat="OK", min=319.087, minpercent=50.00, max=333.272, maxpercent=99.98]
+ 
+9 0 /home/phil/test/1-master@172.16.192.14_5000/9
+[struct stat="OK", time=0]
+ 
+[INFO] [11/03/2021 11:38:21.904] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/9/1-mosaic.fits for tasks : [10, 31]
+INPUT : /test/1-master@172.16.192.14_5000/9/1-mosaic.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/1-mosaic.fits /tmp/test/1-master@172.16.192.14_5000/10/1-mosaic.fits
+29 0 /home/phil/test/1-master@172.16.192.14_5000/29
+[struct stat="OK", time=0]
+ 
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/1-mosaic.fits /tmp/test/1-master@172.16.192.14_5000/31/1-mosaic.fits
+[INFO] [11/03/2021 11:38:21.935] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Recv input file : test@172.16.192.16:4200:/test/1-master@172.16.192.14_5000/29/3-mosaic.fits for tasks : [31, 30]
+INPUT : /test/1-master@172.16.192.14_5000/29/3-mosaic.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/3-mosaic.fits /tmp/test/1-master@172.16.192.14_5000/31/3-mosaic.fits
+CP : (0,,) /tmp/test/1-master@172.16.192.14_5000/files/3-mosaic.fits /tmp/test/1-master@172.16.192.14_5000/30/3-mosaic.fits
+[INFO] [11/03/2021 11:38:22.635] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 10 task /1-master@172.16.192.14_5000/mJPEG
+[INFO] [11/03/2021 11:38:22.635] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 31 task /1-master@172.16.192.14_5000/mJPEG
+[INFO] [11/03/2021 11:38:22.636] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Run 30 task /1-master@172.16.192.14_5000/mJPEG
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mJPEG -o /tmp/test/1-master@172.16.192.14_5000/10/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mJPEG -o /tmp/test/1-master@172.16.192.14_5000/31/exec.tar)
+(Exe : ,172.16.192.14:5200/1-master@172.16.192.14_5000/mJPEG -o /tmp/test/1-master@172.16.192.14_5000/30/exec.tar)
+CURL : 
+[INFO] [11/03/2021 11:38:22.661] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/10
+CURL : 
+[INFO] [11/03/2021 11:38:22.664] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/30
+CURL : 
+[INFO] [11/03/2021 11:38:22.669] [RemoteSystem-akka.actor.default-dispatcher-2] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Exe received : 1-master@172.16.192.14_5000/31
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/10 ; echo $(pwd) ; ./launch.sh -ct 0 -gray  1-mosaic.fits  0s 99.999% gaussian -out  1-mosaic.jpg
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/30 ; echo $(pwd) ; ./launch.sh -ct 0 -gray  3-mosaic.fits  0s 99.999% gaussian -out  3-mosaic.jpg
+(0,,)
+cd /home/phil/test/1-master@172.16.192.14_5000/31 ; echo $(pwd) ; ./launch.sh -red  1-mosaic.fits  -1s 99.999% gaussian-log -green  2-mosaic.fits  -1s 99.999% gaussian-log -blue  3-mosaic.fits  -1s 99.999% gaussian-log -out  mosaic-color.jpg
+10 0 /home/phil/test/1-master@172.16.192.14_5000/10
+[struct stat="OK", min=80.2622, minpercent=50.00, max=92.5271, maxpercent=99.98]
+ 
+30 0 /home/phil/test/1-master@172.16.192.14_5000/30
+[struct stat="OK", min=450.235, minpercent=50.00, max=461.125, maxpercent=99.98]
+ 
+31 0 /home/phil/test/1-master@172.16.192.14_5000/31
+[struct stat="OK", bmin=449.599, bminpercent=15.34, bmax=461.125, bmaxpercent=99.98, gmin=318.529, gminpercent=16.28, gmax=333.272, gmaxpercent=99.98, rmin=79.9006, rminpercent=15.71, rmax=92.5271, rmaxpercent=99.98]
+ 
+INTERRUPT : 1
+[INFO] [11/03/2021 11:38:22.933] [RemoteSystem-akka.actor.default-dispatcher-3] [akka.tcp://RemoteSystem@172.16.192.16:4000/user/daemon] Kill vm : 1

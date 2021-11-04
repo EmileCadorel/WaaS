@@ -1,0 +1,47 @@
+Name:                montage-31qxnml
+Namespace:           argo
+ServiceAccount:      default
+Status:              Succeeded
+Conditions:          
+ PodRunning          False
+ Completed           True
+Created:             Wed Nov 03 09:56:52 +0100 (3 minutes ago)
+Started:             Wed Nov 03 09:56:52 +0100 (3 minutes ago)
+Finished:            Wed Nov 03 10:00:24 +0100 (now)
+Duration:            3 minutes 32 seconds
+Progress:            31/31
+ResourcesDuration:   5m38s*(100Mi memory),7m58s*(1 cpu)
+
+STEP                TEMPLATE     PODNAME                     DURATION  MESSAGE
+ ✔ montage-31qxnml  montage-31                                           
+ ├─✔ mProject1      mProject     montage-31qxnml-3592604582  47s         
+ ├─✔ mProject2      mProject     montage-31qxnml-3575826963  50s         
+ ├─✔ mProject3      mProject     montage-31qxnml-3559049344  48s         
+ ├─✔ mProject4      mProject     montage-31qxnml-3676492677  48s         
+ ├─✔ mProject5      mProject     montage-31qxnml-3659715058  52s         
+ ├─✔ mProject6      mProject     montage-31qxnml-3642937439  53s         
+ ├─✔ mDiffFit1      mDiffFit     montage-31qxnml-380430059   12s         
+ ├─✔ mDiffFit2      mDiffFit     montage-31qxnml-397207678   14s         
+ ├─✔ mDiffFit3      mDiffFit     montage-31qxnml-413985297   15s         
+ ├─✔ mConcatFit1    mConcatFit   montage-31qxnml-422983536   10s         
+ ├─✔ mConcatFit2    mConcatFit   montage-31qxnml-473316393   13s         
+ ├─✔ mConcatFit3    mConcatFit   montage-31qxnml-456538774   15s         
+ ├─✔ mBgModel1      mBgModel     montage-31qxnml-2720165089  12s         
+ ├─✔ mBgModel2      mBgModel     montage-31qxnml-2669832232  10s         
+ ├─✔ mBgModel3      mBgModel     montage-31qxnml-2686609851  14s         
+ ├─✔ mBackground1   mBackground  montage-31qxnml-1169163529  20s         
+ ├─✔ mBackground2   mBackground  montage-31qxnml-1118830672  18s         
+ ├─✔ mBackground3   mBackground  montage-31qxnml-1135608291  22s         
+ ├─✔ mBackground4   mBackground  montage-31qxnml-1219496386  28s         
+ ├─✔ mBackground5   mBackground  montage-31qxnml-1236274005  24s         
+ ├─✔ mBackground6   mBackground  montage-31qxnml-1185941148  26s         
+ ├─✔ mImgtbl1       mImgtbl      montage-31qxnml-16354648    11s         
+ ├─✔ mImgtbl2       mImgtbl      montage-31qxnml-66687505    14s         
+ ├─✔ mImgtbl3       mImgtbl      montage-31qxnml-49909886    15s         
+ ├─✔ mAdd1          mAdd         montage-31qxnml-2294999624  13s         
+ ├─✔ mAdd2          mAdd         montage-31qxnml-2345332481  15s         
+ ├─✔ mAdd3          mAdd         montage-31qxnml-2328554862  11s         
+ ├─✔ mJPEG1         mJPEG        montage-31qxnml-3908583731  17s         
+ ├─✔ mJPEG2         mJPEG        montage-31qxnml-3925361350  13s         
+ ├─✔ mJPEG3         mJPEG        montage-31qxnml-3942138969  15s         
+ └─✔ mJPEG4         mJPEG        montage-31qxnml-3958916588  19s

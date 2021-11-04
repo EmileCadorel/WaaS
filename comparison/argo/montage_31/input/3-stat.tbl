@@ -1,0 +1,5 @@
+|cntr1|cntr2|                             plus|                            minus|                   diff|                   stat|
+| long| long|                             char|                             char|                   char|                   char|
+|     |     |                                 |                                 |                       |                       |
+| null| null|                             null|                             null|                   null|                   null|
+     1     2 2mass-atlas-001021s-k0490233.fits 2mass-atlas-980914s-k0820044.fits diff.000001.000002.fits 3-fit.000001.000002.txt 

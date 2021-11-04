@@ -1,0 +1,285 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: montage-31
+spec:                     
+  entrypoint: montage-31
+  volumes:              
+    - name: workdir       
+      persistentVolumeClaim:
+        claimName: task-pv-claim
+            
+  templates:
+    - name: mProject
+      inputs:
+        parameters:
+        - name: cmd_line
+      container:
+        image: nginx
+        command: [bin/bash, -c, "cd /mnt/vol ; export PATH=$PATH:/mnt/vol:. ; ./mProject {{inputs.parameters.cmd_line}}"]
+        volumeMounts:
+        - name: workdir
+          mountPath: "/mnt/vol/"
+
+    - name: mDiffFit
+      inputs:
+        parameters:
+        - name: cmd_line
+      container:
+        image: nginx
+        command: [bin/bash, -c, "cd /mnt/vol ; export PATH=$PATH:/mnt/vol:. ; ./mDiffFit {{inputs.parameters.cmd_line}}"]
+        volumeMounts:
+        - name: workdir
+          mountPath: "/mnt/vol/"
+
+    - name: mConcatFit
+      inputs:
+        parameters:
+        - name: cmd_line
+      container:
+        image: nginx
+        command: [bin/bash, -c, "cd /mnt/vol ; export PATH=$PATH:/mnt/vol:. ; ./mConcatFit {{inputs.parameters.cmd_line}}"]
+        volumeMounts:
+        - name: workdir
+          mountPath: "/mnt/vol/"
+            
+    - name: mBgModel
+      inputs:
+        parameters:
+        - name: cmd_line
+      container:
+        image: nginx
+        command: [bin/bash, -c, "cd /mnt/vol ; export PATH=$PATH:/mnt/vol:. ; ./mBgModel {{inputs.parameters.cmd_line}}"]
+        volumeMounts:
+        - name: workdir
+          mountPath: "/mnt/vol/"
+
+
+    - name: mBackground
+      inputs:
+        parameters:
+        - name: cmd_line
+      container:
+        image: nginx
+        command: [bin/bash, -c, "cd /mnt/vol ; export PATH=$PATH:/mnt/vol:. ; ./mBackground {{inputs.parameters.cmd_line}}"]
+        volumeMounts:
+        - name: workdir
+          mountPath: "/mnt/vol/"
+
+    - name: mImgtbl
+      inputs:
+        parameters:
+        - name: cmd_line
+      container:
+        image: nginx
+        command: [bin/bash, -c, "cd /mnt/vol ; export PATH=$PATH:/mnt/vol:. ; ./mImgtbl {{inputs.parameters.cmd_line}}"]
+        volumeMounts:
+        - name: workdir
+          mountPath: "/mnt/vol/"
+
+    - name: mAdd
+      inputs:
+        parameters:
+        - name: cmd_line
+      container:
+        image: nginx
+        command: [bin/bash, -c, "cd /mnt/vol ; export PATH=$PATH:/mnt/vol:. ; ./mAdd {{inputs.parameters.cmd_line}}"]
+        volumeMounts:
+        - name: workdir
+          mountPath: "/mnt/vol/"
+
+    - name: mJPEG
+      inputs:
+        parameters:
+        - name: cmd_line
+      container:
+        image: nginx
+        command: [bin/bash, -c, "cd /mnt/vol ; export PATH=$PATH:/mnt/vol:. ; ./mJPEG {{inputs.parameters.cmd_line}}"]
+        volumeMounts:
+        - name: workdir
+          mountPath: "/mnt/vol/"
+      
+    - name: montage-31      
+      dag:
+        tasks:
+          - name: mProject1
+            template: mProject
+            arguments:
+              parameters: [{name: cmd_line, value: "-X  2mass-atlas-980914s-j0820044.fits   p2mass-atlas-980914s-j0820044.fits   region-oversized.hdr"}]
+            
+          - name: mProject2
+            template: mProject
+            arguments:
+              parameters: [{name: cmd_line, value: "-X  2mass-atlas-001021s-j0490233.fits   p2mass-atlas-001021s-j0490233.fits   region-oversized.hdr"}]
+            
+          - name: mProject3
+            template: mProject
+            arguments:
+              parameters: [{name: cmd_line, value: "-X  2mass-atlas-980914s-h0820044.fits   p2mass-atlas-980914s-h0820044.fits   region-oversized.hdr"}]
+            
+          - name: mProject4
+            template: mProject
+            arguments:
+              parameters: [{name: cmd_line, value: "-X  2mass-atlas-001021s-h0490233.fits   p2mass-atlas-001021s-h0490233.fits   region-oversized.hdr"}]
+            
+          - name: mProject5
+            template: mProject
+            arguments:
+              parameters: [{name: cmd_line, value: "-X  2mass-atlas-001021s-k0490233.fits   p2mass-atlas-001021s-k0490233.fits   region-oversized.hdr"}]
+            
+          - name: mProject6
+            template: mProject
+            arguments:
+              parameters: [{name: cmd_line, value: "-X  2mass-atlas-980914s-k0820044.fits   p2mass-atlas-980914s-k0820044.fits   region-oversized.hdr"}]
+
+          - name: mDiffFit1
+            template: mDiffFit
+            arguments:
+              parameters: [{name: cmd_line, value: "-d -s  1-fit.000001.000002.txt   p2mass-atlas-980914s-j0820044.fits   p2mass-atlas-001021s-j0490233.fits   1-diff.000001.000002.fits   region-oversized.hdr"}]
+            dependencies: [mProject1, mProject2]
+              
+          - name: mDiffFit2
+            template: mDiffFit
+            arguments:
+              parameters: [{name: cmd_line, value: "-d -s  2-fit.000001.000002.txt   p2mass-atlas-980914s-h0820044.fits   p2mass-atlas-001021s-h0490233.fits   2-diff.000001.000002.fits   region-oversized.hdr"}]
+            dependencies: [mProject3, mProject4]
+
+          - name: mDiffFit3
+            template: mDiffFit
+            arguments:
+              parameters: [{name: cmd_line, value: "-d -s  3-fit.000001.000002.txt   p2mass-atlas-001021s-k0490233.fits   p2mass-atlas-980914s-k0820044.fits   3-diff.000001.000002.fits   region-oversized.hdr"}]
+            dependencies: [mProject5, mProject6]
+
+          - name: mConcatFit1
+            template: mConcatFit
+            arguments:
+              parameters: [{name: cmd_line, value: " 1-stat.tbl   1-fits.tbl  ."}]
+            dependencies: [mDiffFit1]
+
+          - name: mConcatFit2
+            template: mConcatFit
+            arguments:
+              parameters: [{name: cmd_line, value: " 2-stat.tbl   2-fits.tbl  ."}]
+            dependencies: [mDiffFit2]
+
+          - name: mConcatFit3
+            template: mConcatFit
+            arguments:
+              parameters: [{name: cmd_line, value: " 3-stat.tbl   3-fits.tbl  ."}]
+            dependencies: [mDiffFit3]
+
+          - name: mBgModel1
+            template: mBgModel
+            arguments:
+              parameters: [{name: cmd_line, value: "-i 100000  1-images.tbl   1-fits.tbl   1-corrections.tbl"}]
+            dependencies: [mConcatFit1]
+
+          - name: mBgModel2
+            template: mBgModel
+            arguments:
+              parameters: [{name: cmd_line, value: "-i 100000  2-images.tbl   2-fits.tbl   2-corrections.tbl"}]
+            dependencies: [mConcatFit2]
+
+          - name: mBgModel3
+            template: mBgModel
+            arguments:
+              parameters: [{name: cmd_line, value: "-i 100000  3-images.tbl   3-fits.tbl   3-corrections.tbl"}]
+            dependencies: [mConcatFit3]
+
+          - name: mBackground1
+            template: mBackground
+            arguments:
+              parameters: [{name: cmd_line, value: "-t  p2mass-atlas-980914s-j0820044.fits   c2mass-atlas-980914s-j0820044.fits   1-projected.tbl   1-corrections.tbl"}]
+            dependencies: [mProject1, mBgModel1]
+
+          - name: mBackground2
+            template: mBackground
+            arguments:
+              parameters: [{name: cmd_line, value: "-t  p2mass-atlas-001021s-j0490233.fits   c2mass-atlas-001021s-j0490233.fits   1-projected.tbl   1-corrections.tbl"}]
+            dependencies: [mProject2, mBgModel1]
+
+          - name: mBackground3
+            template: mBackground
+            arguments:
+              parameters: [{name: cmd_line, value: "-t  p2mass-atlas-980914s-h0820044.fits   c2mass-atlas-980914s-h0820044.fits   2-projected.tbl   2-corrections.tbl"}]
+            dependencies: [mProject3, mBgModel2]
+
+          - name: mBackground4
+            template: mBackground
+            arguments:
+              parameters: [{name: cmd_line, value: "-t  p2mass-atlas-001021s-h0490233.fits   c2mass-atlas-001021s-h0490233.fits   2-projected.tbl   2-corrections.tbl"}]
+            dependencies: [mProject4, mBgModel2]
+
+          - name: mBackground5
+            template: mBackground
+            arguments:
+              parameters: [{name: cmd_line, value: "-t  p2mass-atlas-001021s-k0490233.fits   c2mass-atlas-001021s-k0490233.fits   3-projected.tbl   3-corrections.tbl"}]
+            dependencies: [mProject5, mBgModel3]
+
+          - name: mBackground6
+            template: mBackground
+            arguments:
+              parameters: [{name: cmd_line, value: "-t  p2mass-atlas-980914s-k0820044.fits   c2mass-atlas-980914s-k0820044.fits   3-projected.tbl   3-corrections.tbl"}]
+            dependencies: [mProject6, mBgModel3]
+
+          - name: mImgtbl1
+            template: mImgtbl
+            arguments:
+              parameters: [{name: cmd_line, value: ". -t  1-corrected.tbl   1-updated-corrected.tbl"}]
+            dependencies: [mBackground1, mBackground2]
+
+          - name: mImgtbl2
+            template: mImgtbl
+            arguments:
+              parameters: [{name: cmd_line, value: ". -t  2-corrected.tbl   2-updated-corrected.tbl"}]
+            dependencies: [mBackground3, mBackground4]
+
+          - name: mImgtbl3
+            template: mImgtbl
+            arguments:
+              parameters: [{name: cmd_line, value: ". -t  3-corrected.tbl   3-updated-corrected.tbl"}]
+            dependencies: [mBackground5, mBackground6]
+          
+          - name: mAdd1
+            template: mAdd
+            arguments:
+              parameters: [{name: cmd_line, value: "-e  1-updated-corrected.tbl   region.hdr   1-mosaic.fits"}]
+            dependencies: [mImgtbl1]
+
+          - name: mAdd2
+            template: mAdd
+            arguments:
+              parameters: [{name: cmd_line, value: "-e  2-updated-corrected.tbl   region.hdr   2-mosaic.fits"}]
+            dependencies: [mImgtbl2]
+
+          - name: mAdd3
+            template: mAdd
+            arguments:
+              parameters: [{name: cmd_line, value: "-e  3-updated-corrected.tbl   region.hdr   3-mosaic.fits"}]
+            dependencies: [mImgtbl3]
+
+          - name: mJPEG1
+            template: mJPEG
+            arguments:
+              parameters: [{name: cmd_line, value: "-ct 0 -gray  1-mosaic.fits  0s 99.999% gaussian -out  1-mosaic.jpg"}]
+            dependencies: [mAdd1]
+
+          - name: mJPEG2
+            template: mJPEG
+            arguments:
+              parameters: [{name: cmd_line, value: "-ct 0 -gray  2-mosaic.fits  0s 99.999% gaussian -out  2-mosaic.jpg"}]
+            dependencies: [mAdd2]
+
+          - name: mJPEG3
+            template: mJPEG
+            arguments:
+              parameters: [{name: cmd_line, value: "-ct 0 -gray  3-mosaic.fits  0s 99.999% gaussian -out  3-mosaic.jpg"}]
+            dependencies: [mAdd3]
+
+          - name: mJPEG4
+            template: mJPEG
+            arguments:
+              parameters: [{name: cmd_line, value: "-red  1-mosaic.fits  -1s 99.999% gaussian-log -green  2-mosaic.fits  -1s 99.999% gaussian-log -blue  3-mosaic.fits  -1s 99.999% gaussian-log -out  mosaic-color.jpg"}]
+            dependencies: [mAdd1, mAdd2, mAdd3]
+
+          

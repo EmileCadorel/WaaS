@@ -12,7 +12,7 @@ libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.5.26"
 libraryDependencies += "com.typesafe.akka" %% "akka-remote" % "2.5.26"
 
 libraryDependencies += "com.typesafe.akka" %% "akka-stream" % "2.5.26"
-libraryDependencies += "org.jline" % "jline" % "3.5.1"
+// libraryDependencies += "org.jline" % "jline" % "3.21.0"
 libraryDependencies += "com.github.scopt" % "scopt_2.11" % "4.0.0-RC2"
 libraryDependencies += "org.mongodb.scala" %% "mongo-scala-driver" % "2.6.0"
 libraryDependencies += "org.yaml" % "snakeyaml" % "1.8"

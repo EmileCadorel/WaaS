@@ -1,0 +1,5 @@
+\datatype=fitshdr
+| cntr|  ctype1|  ctype2|naxis1|naxis2|    crval1|    crval2|    crpix1|    crpix2|     cdelt1|     cdelt2|  crota2|equinox|                               file|
+|  int|    char|    char|   int|   int|    double|    double|    double|    double|     double|     double|  double|    int|                               char|
+     1 RA---TAN DEC--TAN    513   1025  15.095520  -0.745590     292.85     698.04 -0.00027778  0.00027778  0.00000    2000 p2mass-atlas-980914s-h0820044.fits
+     2 RA---TAN DEC--TAN    513   1025  15.095520  -0.745590     293.79     500.55 -0.00027778  0.00027778  0.00000    2000 p2mass-atlas-001021s-h0490233.fits

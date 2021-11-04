@@ -1,0 +1,5 @@
+[masters]
+master ansible_host=econome-14.nantes.grid5000.fr ansible_user=root
+
+[workers]
+worker0 ansible_host=econome-21.nantes.grid5000.fr ansible_user=root

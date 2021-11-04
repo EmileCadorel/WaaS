@@ -2,7 +2,7 @@ from execo import *
 from execo_g5k import *
 import yaml
 import datetime
-from shutil import copyfile 
+from shutil import copyfile
 import ntpath
 import yaml
 import os
@@ -24,14 +24,14 @@ def getAddrOfNode (node) :
     res = known_roots [cluster] + (addr.split (".")[0].split ("-")[1])
     return (res, cluster)
 
-def getNodes (started) : 
+def getNodes (started) :
     jobs = get_current_oar_jobs (["nantes"])
     logger.info ("Current job : " + str (jobs))
 
     running_jobs = [ job for job in jobs if get_oar_job_info (*job).get ("state") == "Running" ]
     nodes = sorted ([job_nodes for job in running_jobs for job_nodes in get_oar_job_nodes (*job)], key=lambda x: x.address)
     logger.info ("Will deploy on : " + str (nodes))
-    
+
     deployed, undeployed = deploy (Deployment (nodes, env_name="ubuntu_1804"), check_deployed_command=started)
     print ("Deployed")
     return nodes
@@ -74,7 +74,7 @@ def deployKVM (started, nodes) :
         )
 
         logger.info ("Deployed, running apt update")
-    
+
         update.start ()
         update.wait ()
 
@@ -84,11 +84,11 @@ def deployKVM (started, nodes) :
         )
 
         logger.info ("Installing dependencies")
-    
+
         install_deps.start ()
         install_deps.wait ()
-    
-    return nodes 
+
+    return nodes
 
 
 # Send the image to boot VM on the nodes 
