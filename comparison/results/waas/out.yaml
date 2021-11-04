@@ -196,3 +196,8 @@ vms:
     node: econome-16.nantes.grid5000.fr'
     ready: 11/03/2021 11:37:50
     start: 11/03/2021 11:37:49
+workflows:
+  1-master@172.16.192.14_5000:
+    duration: 0:00:37
+    end: 11/03/2021 11:38:22
+    start: 11/03/2021 11:37:45
