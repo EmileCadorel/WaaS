@@ -1,0 +1,588 @@
+
+tr mOverlaps {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mOverlaps"
+  }
+}
+
+tr mDiffExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mDiffExec"
+  }
+}
+
+tr mBgModel {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mBgModel"
+  }
+}
+
+tr mExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mExec"
+  }
+}
+
+tr mProjExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mProjExec"
+  }
+}
+
+tr mMovingTarget {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mMovingTarget"
+  }
+}
+
+tr mProjectQL {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mProjectQL"
+  }
+}
+
+tr mTileHdr {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mTileHdr"
+  }
+}
+
+tr mPNGWWTExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mPNGWWTExec"
+  }
+}
+
+tr mMakeHdr {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mMakeHdr"
+  }
+}
+
+tr mDiffFit {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mDiffFit"
+    profile pegasus "clusters.size" "3"
+  }
+}
+
+tr mDiffFitExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mDiffFitExec"
+  }
+}
+
+tr mFitExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mFitExec"
+  }
+}
+
+tr mFixHdr {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mFixHdr"
+  }
+}
+
+tr mSearch {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mSearch"
+  }
+}
+
+tr mBackground {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mBackground"
+    profile pegasus "clusters.size" "3"
+  }
+}
+
+tr mCalibrate {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mCalibrate"
+  }
+}
+
+tr mGetHdr {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mGetHdr"
+  }
+}
+
+tr mCoverageCheck {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mCoverageCheck"
+  }
+}
+
+tr mDAGTbls {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mDAGTbls"
+  }
+}
+
+tr mViewer {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mViewer"
+  }
+}
+
+tr mDAG {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mDAG"
+  }
+}
+
+tr mRotate {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mRotate"
+  }
+}
+
+tr mHdrtbl {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mHdrtbl"
+  }
+}
+
+tr mProject {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mProject"
+    profile pegasus "clusters.size" "3"
+  }
+}
+
+tr mImgtbl {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mImgtbl"
+  }
+}
+
+tr mArchiveList {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mArchiveList"
+  }
+}
+
+tr mBestImage {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mBestImage"
+  }
+}
+
+tr mGridExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mGridExec"
+  }
+}
+
+tr mArchiveGet {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mArchiveGet"
+  }
+}
+
+tr mHdrCheck {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mHdrCheck"
+  }
+}
+
+tr mTblSort {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mTblSort"
+  }
+}
+
+tr mDAGFiles {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mDAGFiles"
+  }
+}
+
+tr mConvert {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mConvert"
+  }
+}
+
+tr mShrink {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mShrink"
+  }
+}
+
+tr mHdrWWT {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mHdrWWT"
+  }
+}
+
+tr mHdr {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mHdr"
+  }
+}
+
+tr HPXcvt {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/HPXcvt"
+  }
+}
+
+tr mNotify {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mNotify"
+  }
+}
+
+tr mProjectPP {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mProjectPP"
+  }
+}
+
+tr mDAGGalacticPlane {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mDAGGalacticPlane"
+  }
+}
+
+tr mProjectCube {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mProjectCube"
+  }
+}
+
+tr mCatMap {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mCatMap"
+  }
+}
+
+tr mHistogram {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mHistogram"
+  }
+}
+
+tr mTranspose {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mTranspose"
+  }
+}
+
+tr mNotifyTG {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mNotifyTG"
+  }
+}
+
+tr mMakeImg {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mMakeImg"
+  }
+}
+
+tr mExecTG {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mExecTG"
+  }
+}
+
+tr mTileImage {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mTileImage"
+  }
+}
+
+tr mShrinkCube {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mShrinkCube"
+  }
+}
+
+tr mAddCube {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mAddCube"
+  }
+}
+
+tr mProjWWTExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mProjWWTExec"
+  }
+}
+
+tr mArchiveExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mArchiveExec"
+  }
+}
+
+tr mPix2Coord {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mPix2Coord"
+  }
+}
+
+tr mExamine {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mExamine"
+  }
+}
+
+tr mTblExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mTblExec"
+  }
+}
+
+tr mShrinkHdr {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mShrinkHdr"
+  }
+}
+
+tr mHdrWWTExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mHdrWWTExec"
+  }
+}
+
+tr mSubimage {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mSubimage"
+  }
+}
+
+tr mSubCube {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mSubCube"
+  }
+}
+
+tr mFixNaN {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mFixNaN"
+  }
+}
+
+tr mCatSearch {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mCatSearch"
+  }
+}
+
+tr mPutHdr {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mPutHdr"
+  }
+}
+
+tr mDiff {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mDiff"
+    profile pegasus "clusters.size" "3"
+  }
+}
+
+tr mBgExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mBgExec"
+  }
+}
+
+tr mFlattenExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mFlattenExec"
+  }
+}
+
+tr mTANHdr {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mTANHdr"
+  }
+}
+
+tr mPad {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mPad"
+  }
+}
+
+tr mConcatFit {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mConcatFit"
+  }
+}
+
+tr mPresentation {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mPresentation"
+  }
+}
+
+tr mCalExec {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mCalExec"
+  }
+}
+
+tr mAdd {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mAdd"
+  }
+}
+
+tr mFitplane {
+  site local {
+    type "STAGEABLE"
+    arch "x86_64"
+    pfn "file:///home/emile/Downloads/Montage/bin/mFitplane"
+  }
+}

@@ -18,10 +18,11 @@ def registerInfo (msg, date, dico) :
 
     elif (msg.find ("Start download of flow") != -1):
         index = msg.find (":")
-        name = msg [index+1:].strip ()
+        name = msg [index+1:-1].strip ()
         date = date [1:-1]
         date = date [:date.find (".")]
         workflow = {name : {"start" : date}}
+        print (name)
         if ("workflows" in dico) :
             dico ["workflows"][name] = {"start" : date}
         else :
