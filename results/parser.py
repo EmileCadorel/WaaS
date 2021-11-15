@@ -7,6 +7,20 @@ import sys
 import random
 from datetime import datetime
 
+def find_task_vm (tasks, vm) :
+    for t in tasks:
+        if tasks [t]["vm"] == vm:
+            return tasks [t]
+    return None
+
+def find_vms_workflow (vms, workflow) :
+    res = set ()
+    for v in vms:
+        if vms[v]["workflow"] == workflow :
+            res.add (vms[v]["node"])
+    return list (res)
+
+
 def registerInfo (msg, date, dico) :
     if (msg.find ("New daemon") != -1) :
         daemon = msg [msg.find ("New daemon")+len ("New daemon"):msg.find("is connected")].strip ()
@@ -22,7 +36,7 @@ def registerInfo (msg, date, dico) :
         date = date [1:-1]
         date = date [:date.find (".")]
         workflow = {name : {"start" : date}}
-        print (name)
+
         if ("workflows" in dico) :
             dico ["workflows"][name] = {"start" : date}
         else :
@@ -37,6 +51,8 @@ def registerInfo (msg, date, dico) :
         end = datetime.strptime(workflow["end"], '%m/%d/%Y %H:%M:%S')
         start = datetime.strptime(workflow["start"], '%m/%d/%Y %H:%M:%S')
         workflow ["duration"] = str (end - start)
+        vms = find_vms_workflow (dico ["vms"], name)
+        workflow["nodes"] = vms
     elif (msg.find ("Starting task") != -1) :
         # 1-master@172.16.193.12_5000/64:/1-master@172.16.193.12_5000/mProject@ecotype-12.nantes.grid5000.fr
         msg = msg [msg.find (":")+1:].strip ()
@@ -44,20 +60,19 @@ def registerInfo (msg, date, dico) :
         task, msg = msg [:msg.find (":")].strip (), msg[msg.find (":")+1:].strip ()
         name, msg = msg [:msg.rfind ("@")].strip (), msg[msg.rfind("@")+1:].strip ()        
         name = name[name.rfind("/")+1:]
+        vm = msg[msg.rfind ("on")+2:-1].strip ()
         taskid = workflow + "/" + str (task)
-        print (taskid)
         
         date = date [1:-1]
-        date = date [:date.find (".")]
+        date = date [:date.find (".")]        
         if ("tasks" in dico) :
-            dico ["tasks"][taskid] = {"start" : date, "name" : name, "workflow" : workflow}
+            dico ["tasks"][taskid] = {"start" : date, "name" : name, "workflow" : workflow, "vm" : vm}
         else : 
-            dico ["tasks"] = {taskid : {"start" : date, "name" : name, "workflow" : workflow}}
+            dico ["tasks"] = {taskid : {"start" : date, "name" : name, "workflow" : workflow, "vm" : vm}}
     elif (msg.find ("Task") != -1 and msg.find ("finished")!= -1):
 
         name = msg [:msg.rfind ("@")].strip ()
         name = name [name.rfind(" ")+1:]
-        print (name)
                 
         task = dico ["tasks"][name]
         date = date [1:-1]
@@ -95,7 +110,10 @@ def registerInfo (msg, date, dico) :
         vm_ ["end"] = date
         end = datetime.strptime(vm_["end"], '%m/%d/%Y %H:%M:%S')
         start = datetime.strptime(vm_["start"], '%m/%d/%Y %H:%M:%S')
-        vm_["duration"] = str (end - start)        
+        vm_["duration"] = str (end - start)
+        t = find_task_vm (dico["tasks"], vm)
+        if (t != None): 
+            vm_["workflow"] = t["workflow"]
     # else : not important msg
     
 def interpretLine (line, dico) :
